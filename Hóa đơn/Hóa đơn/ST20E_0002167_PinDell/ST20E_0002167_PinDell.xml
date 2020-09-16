@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inv:invoice xmlns:inv="http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <inv:invoiceData id="data">
+      <inv:invoiceType>01GTKT</inv:invoiceType>
+      <inv:templateCode>01GTKT0/001</inv:templateCode>
+      <inv:invoiceSeries>ST/20E</inv:invoiceSeries>
+      <inv:invoiceNumber>0002167</inv:invoiceNumber>
+      <inv:invoiceName>Hóa đơn giá trị gia tăng</inv:invoiceName>
+      <inv:invoiceIssuedDate>2020-09-11T00:00:00</inv:invoiceIssuedDate>
+      <inv:signedDate>2020-09-11T11:55:56</inv:signedDate>
+      <inv:currencyCode>VND</inv:currencyCode>
+      <inv:adjustmentType>1</inv:adjustmentType>
+      <inv:payments>
+         <inv:payment>
+            <inv:paymentMethodName>TM/CK</inv:paymentMethodName>
+         </inv:payment>
+      </inv:payments>
+      <inv:delivery />
+      <inv:sellerLegalName>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ĐIỆN MÁY TIN HỌC SÁNG TẠO</inv:sellerLegalName>
+      <inv:sellerTaxCode>0315738062</inv:sellerTaxCode>
+      <inv:sellerAddressLine>37/4 Trần Đình Xu, Phường Cầu Kho, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</inv:sellerAddressLine>
+      <inv:sellerPhoneNumber>02866571397</inv:sellerPhoneNumber>
+      <inv:sellerFaxNumber />
+      <inv:sellerEmail />
+      <inv:sellerWebSite />
+      <inv:sellerBankAccount />
+      <inv:sellerBankName />
+      <inv:buyerLegalName>CÔNG TY TNHH ALLEXCEED VIỆT NAM</inv:buyerLegalName>
+      <inv:buyerTaxCode>0309766008</inv:buyerTaxCode>
+      <inv:buyerAddressLine>Số 56-58-60, Đường Hai Bà Trưng, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh, Việt Nam</inv:buyerAddressLine>
+      <inv:deliveryOrderDate>1900-01-01T00:00:00</inv:deliveryOrderDate>
+      <inv:exchangeRate>1.00</inv:exchangeRate>
+      <inv:items>
+         <inv:item>
+            <inv:lineNumber>1</inv:lineNumber>
+            <inv:itemCode>PINLAP002</inv:itemCode>
+            <inv:itemName>Pin máy tính xách tay Dell</inv:itemName>
+            <inv:unitName>Cái</inv:unitName>
+            <inv:quantity>1.00</inv:quantity>
+            <inv:itemTotalAmountWithoutVat>877273</inv:itemTotalAmountWithoutVat>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatAmount>87727</inv:vatAmount>
+            <inv:unitPrice>877272.70</inv:unitPrice>
+            <inv:promotion>0</inv:promotion>
+         </inv:item>
+      </inv:items>
+      <inv:invoiceTaxBreakdowns>
+         <inv:invoiceTaxBreakdown>
+            <inv:vatPercentage>10</inv:vatPercentage>
+         </inv:invoiceTaxBreakdown>
+      </inv:invoiceTaxBreakdowns>
+      <inv:totalAmountWithoutVAT>877273</inv:totalAmountWithoutVAT>
+      <inv:totalVATAmount>87727</inv:totalVATAmount>
+      <inv:totalAmountWithVAT>965000</inv:totalAmountWithVAT>
+      <inv:totalAmountWithVATInWords>Chín trăm sáu mươi lăm nghìn đồng chẵn.</inv:totalAmountWithVATInWords>
+      <inv:discountAmount>0</inv:discountAmount>
+      <inv:isDiscountAmtPos>0</inv:isDiscountAmtPos>
+      <inv:totalAmountWithVATFrn>965000</inv:totalAmountWithVATFrn>
+      <inv:userDefines><![CDATA[<TransactionID>NVS3TKAPL65</TransactionID><InvoiceRefID>6cad8924-70ae-43b8-947e-324c5e3de801</InvoiceRefID><InvoiceTemplateID>47baeb10-031b-4bcc-939c-f9f92cbd814f</InvoiceTemplateID><MainCurrency>VND</MainCurrency><UnitPriceDecimalDigits>2</UnitPriceDecimalDigits><UnitPriceOCDecimalDigits>2</UnitPriceOCDecimalDigits><QuantityDecimalDigits>2</QuantityDecimalDigits><AmountDecimalDigits>0</AmountDecimalDigits><AmountOCDecimalDigits>2</AmountOCDecimalDigits><ExchangRateDecimalDigits>2</ExchangRateDecimalDigits><CoefficientDecimalDigits>2</CoefficientDecimalDigits><AccountObjectCode>ALVN001</AccountObjectCode><TrsContractNo></TrsContractNo><TrsBLNo></TrsBLNo><TrsNameVessel></TrsNameVessel><TrsFlag></TrsFlag><TrsArrival></TrsArrival><TrsDeparture></TrsDeparture><RoomNo></RoomNo><CheckIn></CheckIn><CheckOut></CheckOut><ExciseTaxRate></ExciseTaxRate><ExciseTaxAmount></ExciseTaxAmount><ExciseTaxAmountOC></ExciseTaxAmountOC><TypeDiscount></TypeDiscount><ListStockName> HÀNG HÓA</ListStockName><ListStockAddress> KHO HÀNG HÓA</ListStockAddress><UserItems><UserItem><LineNumber>1</LineNumber><AmountOC>877273 </AmountOC><VATAmountOC>87727 </VATAmountOC><DiscountRate>0.00 </DiscountRate><DiscountAmountOC>0 </DiscountAmountOC><DiscountAmount>0 </DiscountAmount><InventoryItemType>0</InventoryItemType><InWards>1</InWards><UnitPriceAfterTax>0.00 </UnitPriceAfterTax><AmountAfterTax>0 </AmountAfterTax><PanelLengthQuantity>0.00 </PanelLengthQuantity><PanelWidthQuantity>0.00 </PanelWidthQuantity><PanelHeightQuantity>0.00 </PanelHeightQuantity><PanelRadiusQuantity>0.00 </PanelRadiusQuantity><PanelQuantity>0.00 </PanelQuantity><InventoryItemCategoryCode>PIN</InventoryItemCategoryCode><InventoryItemCategoryName>PIN</InventoryItemCategoryName><RowType>0</RowType><MainUnitName>Cái</MainUnitName><MainConvertRate>1.00 </MainConvertRate><MainQuantity>1.00 </MainQuantity><MainUnitPrice>877272.70 </MainUnitPrice></UserItem></UserItems>]]></inv:userDefines>
+   </inv:invoiceData>
+   <inv:controlData>
+      <inv:systemCode>LHD_MISA</inv:systemCode>
+   </inv:controlData>
+   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="seller">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="#data">
+            <Transforms>
+               <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>XzvYw5Z99ZcY1iaX+6Zoi+esNNo=</DigestValue>
+         </Reference>
+      </SignedInfo>
+      <SignatureValue>ICO91tJqBtc9XuhOiXrSmu57IIPbGBDovBUy6l+6f0vgfceob8lIHI4HY5u4418tK6DO5ngpeNI837HAn3tei66rBPqsHvspXG48z/HlyTFy1T+BFo2957F6dsAEWvCh3YG1vT5MZADuP3wDlra0a7QDcme3k3matFB0q25ic3E=</SignatureValue>
+      <KeyInfo>
+         <X509Data>
+            <X509SubjectName>C=VN, L=TPHCM, O=SỞ KH &amp; ĐT, CN=CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ĐIỆN MÁY TIN HỌC SÁNG TẠO, OID.0.9.2342.19200300.100.1.1=MST:0315738062</X509SubjectName>
+            <X509Certificate>MIIEATCCAumgAwIBAgIQVAT//rcDP7MW1nIgG345ZjANBgkqhkiG9w0BAQUFADA6MQswCQYDVQQGEwJWTjEWMBQGA1UEChMNVmlldHRlbCBHcm91cDETMBEGA1UEAxMKVmlldHRlbC1DQTAeFw0xOTA2MjEwNzU5MDlaFw0yMDEwMDIwMjQyMjBaMIGrMR4wHAYKCZImiZPyLGQBAQwOTVNUOjAzMTU3MzgwNjIxVDBSBgNVBAMMS0PDlE5HIFRZIFROSEggVEjGr8agTkcgTeG6oEkgROG7ikNIIFbhu6QgxJBJ4buGTiBNw4FZIFRJTiBI4buMQyBTw4FORyBU4bqgTzEWMBQGA1UECgwNU+G7niBLSCAmIMSQVDEOMAwGA1UEBwwFVFBIQ00xCzAJBgNVBAYTAlZOMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDa4vr+JpMbb1TBeFzScxhws4JWrdPUkfxH1SjgQG5kdVaDxGzGvBhbt7URUW4lcybSRY6nzsThODE1rZu1mVGbFHEswIafh6RiH9fyeMu89wuRl+S1BwXO3J4kUxkndeLoXtDf1K8o7h6nEZRQuOhq9hdhfGq00hvtPeNMLAX1hQIDAQABo4IBEzCCAQ8wNQYIKwYBBQUHAQEEKTAnMCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC52aWV0dGVsLWNhLnZuMB0GA1UdDgQWBBS+wFMDYbB0rGfdUvfs9La7nBZxqTAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFAhg5h8bFNlIgAtep1xzJSwgDfnWMHgGA1UdHwRxMG8wbaAroCmGJ2h0dHA6Ly9jcmwudmlldHRlbC1jYS52bi9WaWV0dGVsLUNBLmNybKI+pDwwOjETMBEGA1UEAwwKVmlldHRlbC1DQTEWMBQGA1UECgwNVmlldHRlbCBHcm91cDELMAkGA1UEBhMCVk4wDgYDVR0PAQH/BAQDAgXgMA0GCSqGSIb3DQEBBQUAA4IBAQC3UrFo4bMb185ICA6Hm63QUjOAI4RFbrK+1QAGPEQdnA07skZgUQK5fLWmRo8gANvr6XXZLQwYfrj+3FQcK9wbP8fot0fONKuRsbrbdKNfvxCXBKL/DEGvJUb8Hm6QojgQe6cP02s/P30oRdiOTfrXbH4jRpHuEYqt8xa4dzgUJh9RUl7A7SURDMlc2Gfh67sLiYdteUGaea9c62MYa6zDJPusWXoAOxGQZqUF9uVzrFD2RiQ5zzx2NbAoi41KMS2GOJRY5yys4nfmWZNOMqhId8zCImi7jpJtPMdXVsgKRPhwnnP9fySemuOUf6EZjmZ5Nu3MtpJQepKykqOq+Yi0</X509Certificate>
+         </X509Data>
+      </KeyInfo>
+   </Signature>
+</inv:invoice>

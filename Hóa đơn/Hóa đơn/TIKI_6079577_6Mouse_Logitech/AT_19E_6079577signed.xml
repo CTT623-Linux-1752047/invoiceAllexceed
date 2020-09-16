@@ -1,0 +1,124 @@
+﻿
+<?xml-stylesheet type='text/xsl' href='AT_19E_6079577.xml' ?>
+<inv:invoice xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:inv="http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1">
+  <inv:invoiceData id="data">
+    <inv:sellerAppRecordId />
+    <inv:invoiceAppRecordId><![CDATA[HDAP2009/0502575]]></inv:invoiceAppRecordId>
+    <inv:invoiceType>25</inv:invoiceType>
+    <inv:invoiceSigned>@invoiceSigned</inv:invoiceSigned>
+    <inv:vatPercentageBill>10</inv:vatPercentageBill>
+    <inv:referentNo>668148112</inv:referentNo>
+    <inv:printFlag>@printFlag</inv:printFlag>
+    <inv:printSample>False</inv:printSample>
+    <inv:templateCode><![CDATA[01GTKT0/002]]></inv:templateCode>
+    <inv:adjustmentType>
+    </inv:adjustmentType>
+    <inv:originalInvoice>
+    </inv:originalInvoice>
+    <inv:invoiceSeries><![CDATA[AT/19E]]></inv:invoiceSeries>
+    <inv:invoiceNumber>6079577</inv:invoiceNumber>
+    <inv:invoiceName>HÓA ĐƠN GIÁ TRỊ GIA TĂNG</inv:invoiceName>
+    <inv:invoiceIssuedDate><![CDATA[10/09/2020]]></inv:invoiceIssuedDate>
+    <inv:signedDate><![CDATA[10/09/2020]]></inv:signedDate>
+    <inv:submittedDate><![CDATA[10/09/2020]]></inv:submittedDate>
+    <inv:contractNumber />
+    <inv:currencyCode>VNĐ</inv:currencyCode>
+    <inv:ExchangeRate>1</inv:ExchangeRate>
+    <inv:invoiceNote>sale_order_invoice</inv:invoiceNote>
+    <inv:paymentMethodName><![CDATA[TM/CK]]></inv:paymentMethodName>
+    <inv:additionalReferenceDesc />
+    <inv:payments>
+      <inv:payment>
+        <inv:paymentMethodNameExt><![CDATA[TM/CK]]></inv:paymentMethodNameExt>
+      </inv:payment>
+    </inv:payments>
+    <inv:delivery />
+    <inv:sellerLegalName>CÔNG TY TNHH MTV THƯƠNG MẠI TI KI</inv:sellerLegalName>
+    <inv:sellerTaxCode>0312388363</inv:sellerTaxCode>
+    <inv:sellerAddressLine>52 Út Tịch, P.4, Q. Tân Bình, TP. Hồ Chí Minh, Việt Nam</inv:sellerAddressLine>
+    <inv:sellerPhoneNumber>(028) 7 305 8454</inv:sellerPhoneNumber>
+    <inv:sellerFaxNumber>(028) 7 305 8454</inv:sellerFaxNumber>
+    <inv:sellerEmail>.</inv:sellerEmail>
+    <inv:sellerWebsite>tiki.vn</inv:sellerWebsite>
+    <inv:sellerBankName>NH TMCP Ngoại Thương Việt Nam - CN Gò Vấp</inv:sellerBankName>
+    <inv:sellerBankAccount>0911000013592</inv:sellerBankAccount>
+    <inv:sellerSignedPersonName>
+    </inv:sellerSignedPersonName>
+    <inv:sellerContactPersonName />
+    <inv:sellerSubmittedPersonName />
+    <inv:buyerDisplayName>CÔNG TY TNHH ALLEXCEED VIỆT NAM</inv:buyerDisplayName>
+    <inv:buyerLegalName>CÔNG TY TNHH ALLEXCEED VIỆT NAM</inv:buyerLegalName>
+    <inv:buyerTaxCode>0309766008</inv:buyerTaxCode>
+    <inv:buyerAddressLine>56-58-60 Hai Bà Trưng P.Bến Nghé Q.1 Tp.HCM</inv:buyerAddressLine>
+    <inv:buyerPhoneNumber>0911223522</inv:buyerPhoneNumber>
+    <inv:buyerFaxNumber />
+    <inv:buyerEmail />
+    <inv:buyerBankName />
+    <inv:buyerBankAccount />
+    <inv:items>
+      <inv:item>
+        <inv:lineNumber>1</inv:lineNumber>
+        <inv:itemCode>5004474298593</inv:itemCode>
+        <inv:itemName>Chuột Có Dây Logitech M105-Đen - Hàng chính hãng</inv:itemName>
+        <inv:unitName>CÁI</inv:unitName>
+        <inv:ItemPack>2020-09-10</inv:ItemPack>
+        <inv:ItemDate>
+        </inv:ItemDate>
+        <inv:ItemDscnAmnt>0</inv:ItemDscnAmnt>
+        <inv:unitPrice>103636.4</inv:unitPrice>
+        <inv:quantity>5</inv:quantity>
+        <inv:itemTotalAmountWithoutVat>518182</inv:itemTotalAmountWithoutVat>
+        <inv:vatPercentage>10</inv:vatPercentage>
+        <inv:vatAmount>51818</inv:vatAmount>
+        <inv:currency>
+        </inv:currency>
+        <inv:isAdjust>False</inv:isAdjust>
+        <inv:isIncreaseItem>True</inv:isIncreaseItem>
+      </inv:item>
+      <inv:item>
+        <inv:lineNumber>2</inv:lineNumber>
+        <inv:itemCode>6706962500964</inv:itemCode>
+        <inv:itemName>Chuột Không Dây Logitech M331 Silent Plus - Đen - Hàng Chính Hãng</inv:itemName>
+        <inv:unitName>CÁI</inv:unitName>
+        <inv:ItemPack>2020-09-10</inv:ItemPack>
+        <inv:ItemDate>
+        </inv:ItemDate>
+        <inv:ItemDscnAmnt>0</inv:ItemDscnAmnt>
+        <inv:unitPrice>254545</inv:unitPrice>
+        <inv:quantity>1</inv:quantity>
+        <inv:itemTotalAmountWithoutVat>254545</inv:itemTotalAmountWithoutVat>
+        <inv:vatPercentage>10</inv:vatPercentage>
+        <inv:vatAmount>25455</inv:vatAmount>
+        <inv:currency>
+        </inv:currency>
+        <inv:isAdjust>False</inv:isAdjust>
+        <inv:isIncreaseItem>True</inv:isIncreaseItem>
+      </inv:item>
+    </inv:items>
+    <inv:invoiceTaxBreakdowns>
+      <inv:invoiceTaxBreakdown>
+        <inv:vatPercentage>10</inv:vatPercentage>
+        <inv:vatTaxableAmount>77273</inv:vatTaxableAmount>
+        <inv:vatTaxAmount>772727</inv:vatTaxAmount>
+      </inv:invoiceTaxBreakdown>
+    </inv:invoiceTaxBreakdowns>
+    <inv:totalAmountWithoutVAT>772727</inv:totalAmountWithoutVAT>
+    <inv:totalVATAmount>77273</inv:totalVATAmount>
+    <inv:totalAmountWithVAT>850000</inv:totalAmountWithVAT>
+    <inv:totalAmountWithVATInWords>Tám trăm năm mươi nghìn đồng.</inv:totalAmountWithVATInWords>
+    <inv:discountAmount>0</inv:discountAmount>
+    <inv:isDiscountAmtPos>True</inv:isDiscountAmtPos>
+    <inv:userDefines>Ghi chú : (Cần kiểm tra, đối chiếu khi lập, giao nhận hóa đơn)</inv:userDefines>
+    <inv:serviceChargePercent>
+    </inv:serviceChargePercent>
+    <inv:serviceChargeAmnt>
+    </inv:serviceChargeAmnt>
+    <inv:status>
+    </inv:status>
+    <inv:privateCode>YT0MZ57NCJ</inv:privateCode>
+  </inv:invoiceData>
+  <inv:controlData>
+    <inv:systemCode><![CDATA[HDAP2009/0502575]]></inv:systemCode>
+    <inv:qrCodeData><![CDATA[668148112_AT/19E_ORDER]]></inv:qrCodeData>
+  </inv:controlData>
+<Signature Id="seller" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ilX+nVCnlvcHd+YEUpwltz2V540=</DigestValue></Reference></SignedInfo><SignatureValue>DOsYlvLXMdcP9Tvts59BCPKGW3c96PI8Tvk0OTxtc+oMraQK2P34aCy7aQaSM3aCEwCrS8Dm6McoW1QZ/zKJRJHAfvqshwThg9oMNeFZAfTnmjjqeWQWhIeYUKikrB2uTEu9v/0Xbh7xqdFDqwtBhkGmBRLyVsghp+JpwMiG73E=</SignatureValue><KeyInfo><KeyName>Public key of certificate</KeyName><KeyValue><RSAKeyValue><Modulus>spUMar7b4mRmI0xKHuvGhxNi2UMdPItGdt4/B/4eUdvYgkDPbWB8e5hvIcuj+1KhTaRB3v3eRrbI2BR6AlYA2Sa9aPAkWMLKuUEtcEVeUOLBciFMjqt4VYBXb+nrpETFiX7UunO237gwToe95tNEfBsGu6fD0odufx8gukMi3pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIENjCCAx6gAwIBAgIQVAhtFFlHU99j2JQbpAB8pDANBgkqhkiG9w0BAQUFADBLMQswCQYDVQQGEwJWTjEoMCYGA1UEChMfQ29uZyB0eSBjbyBwaGFuIGNodSBreSBzbyBWSSBOQTESMBAGA1UEAxMJU21hcnRTaWduMB4XDTE5MDUyMzA5MDg0N1oXDTIxMDUyMjA5MDg0N1owgZsxHjAcBgoJkiaJk/IsZAEBDA5NU1Q6MDMxMjM4ODM2MzE+MDwGA1UEAww1Q8OUTkcgVFkgVE5ISCBN4buYVCBUSMOATkggVknDik4gVEjGr8agTkcgTeG6oEkgVEkgS0kxEzARBgNVBAcMClTDom4gQsOsbmgxFzAVBgNVBAgMDkjhu5MgQ2jDrSBNaW5oMQswCQYDVQQGEwJWTjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAspUMar7b4mRmI0xKHuvGhxNi2UMdPItGdt4/B/4eUdvYgkDPbWB8e5hvIcuj+1KhTaRB3v3eRrbI2BR6AlYA2Sa9aPAkWMLKuUEtcEVeUOLBciFMjqt4VYBXb+nrpETFiX7UunO237gwToe95tNEfBsGu6fD0odufx8gukMi3pkCAwEAAaOCAUcwggFDMDkGCCsGAQUFBwEBBC0wKzApBggrBgEFBQcwAYYdaHR0cDovL29jc3AxLnNtYXJ0c2lnbi5jb20udm4wHQYDVR0OBBYEFNZoYOWxj0GVRK9bJU6xBhfLRm9OMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUYvbZyBXS/7y7VCCYKI6ZvB6uliQwfQYDVR0fBHYwdDByoB+gHYYbaHR0cDovL2NybC5zbWFydHNpZ24uY29tLnZuok+kTTBLMRIwEAYDVQQDDAlTbWFydFNpZ24xKDAmBgNVBAoMH0NvbmcgdHkgY28gcGhhbiBjaHUga3kgc28gVkkgTkExCzAJBgNVBAYTAlZOMA4GA1UdDwEB/wQEAwIDyDApBgNVHSUEIjAgBggrBgEFBQcDAgYIKwYBBQUHAwQGCisGAQQBgjcKAwwwDQYJKoZIhvcNAQEFBQADggEBABI2Ky0hASE3EhTTOftPYc4reJtCVQIDes0fWZ5QJFIuYZzXGEIxhtAtRY4qfSySMk9AhoxKOZ5j6/rxCmDV6I+keiyCcRx/vxjVO2Z72s3Vew640zuuEVfR/YAme76WRzEF0IqnFSDpx3eLpWjMvC5aU6HeRb/VszXw3BxbbdJzujbrwPGSNWoDHMbTAbh6B018yoedhvd3AyykE4SL84UovKRO2AVToH5VIIzZyzAFzZGdklc1Kx+wOEG449ZRapGQQH0rO4UzCBf/OGyrfgAVjQdeGnwmc5XTROYBDggXnir8ZjZvhi7Wn6ErKkAVstzv9QndKdo2uXSaJW55Guk=</X509Certificate></X509Data></KeyInfo></Signature></inv:invoice>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='mau_hoadon.xslt' ?>
+<inv:invoice xmlns:inv="http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <inv:invoiceData id="data">
+      <inv:sellerAppRecordId />
+      <inv:invoiceAppRecordId>1382390</inv:invoiceAppRecordId>
+      <inv:invoiceType>01GTKT</inv:invoiceType>
+      <inv:templateCode>01GTKT0/001</inv:templateCode>
+      <inv:invoiceSeries>BG/19E</inv:invoiceSeries>
+      <inv:invoiceNumber>0017129</inv:invoiceNumber>
+      <inv:invoiceName>Hóa đơn giá trị gia tăng</inv:invoiceName>
+      <inv:invoiceIssuedDate>2020-09-08T00:00:00</inv:invoiceIssuedDate>
+      <inv:signedDate>2020-09-08T00:00:00</inv:signedDate>
+      <inv:submittedDate>2020-09-08T00:00:00</inv:submittedDate>
+      <inv:contractNumber />
+      <inv:currencyCode>VND</inv:currencyCode>
+      <inv:invoiceNote />
+      <inv:adjustmentType>1</inv:adjustmentType>
+      <inv:additionalReferenceDesc />
+      <inv:payments>
+         <inv:payment>
+            <inv:paymentMethodName>Tiền mặt</inv:paymentMethodName>
+         </inv:payment>
+      </inv:payments>
+      <inv:delivery>
+         <inv:containerNumber>UVZZAC6BJ</inv:containerNumber>
+      </inv:delivery>
+      <inv:sellerLegalName>MOBIFONE THÀNH PHỐ HỒ CHÍ MINH 1 - CÔNG TY DỊCH VỤ MOBIFONE KHU VỰC 2 - CHI NHÁNH TỔNG CÔNG TY VIỄN THÔNG MOBIFONE</inv:sellerLegalName>
+      <inv:sellerTaxCode>0100686209-096</inv:sellerTaxCode>
+      <inv:sellerAddressLine>291A Tô Hiến Thành, Phường 13, Quận 10, Thành phố Hồ Chí Minh, Việt Nam</inv:sellerAddressLine>
+      <inv:sellerPhoneNumber />
+      <inv:sellerFaxNumber />
+      <inv:sellerEmail />
+      <inv:sellerBankName>NGOẠI THƯƠNG VIỆT NAM - CHI NHÁNH HÙNG VƯƠNG - TP. HỒ CHÍ MINH</inv:sellerBankName>
+      <inv:sellerBankAccount>042.100.042.3609</inv:sellerBankAccount>
+      <inv:sellerContactPersonName />
+      <inv:sellerSignedPersonName />
+      <inv:sellerSubmittedPersonName />
+      <inv:buyerDisplayName>Công Ty Trách Nhiệm Hữu Hạn Allexceed Việt Nam</inv:buyerDisplayName>
+      <inv:buyerLegalName>Công Ty Trách Nhiệm Hữu Hạn Allexceed Việt Nam</inv:buyerLegalName>
+      <inv:buyerTaxCode>0309766008</inv:buyerTaxCode>
+      <inv:buyerAddressLine>56-58-60 Hai Bà Trưng Phường Bến Nghé Quận 01 Thành Phố Hồ Chí Minh Việt Nam</inv:buyerAddressLine>
+      <inv:buyerPhoneNumber>909915803</inv:buyerPhoneNumber>
+      <inv:buyerFaxNumber />
+      <inv:buyerEmail>nganvh@allexceed.co.jp</inv:buyerEmail>
+      <inv:buyerBankName />
+      <inv:buyerBankAccount />
+      <inv:items>
+         <inv:item>
+            <inv:lineNumber>1</inv:lineNumber>
+            <inv:itemCode>CMGSTUB000</inv:itemCode>
+            <inv:itemName>CTM MG 4G 64K</inv:itemName>
+            <inv:unitCode>Lần</inv:unitCode>
+            <inv:unitName>Lần</inv:unitName>
+            <inv:quantity>1</inv:quantity>
+            <inv:itemTotalAmountWithoutVat>31818</inv:itemTotalAmountWithoutVat>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatAmount>3182</inv:vatAmount>
+            <inv:unitPrice>31818.18</inv:unitPrice>
+         </inv:item>
+         <inv:item>
+            <inv:lineNumber>2</inv:lineNumber>
+            <inv:itemCode>STUBHM</inv:itemCode>
+            <inv:itemName>Sim 4G 64K HM</inv:itemName>
+            <inv:unitCode>Lần</inv:unitCode>
+            <inv:unitName>Lần</inv:unitName>
+            <inv:quantity>1</inv:quantity>
+            <inv:itemTotalAmountWithoutVat>22727</inv:itemTotalAmountWithoutVat>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatAmount>2273</inv:vatAmount>
+            <inv:unitPrice>22727.27</inv:unitPrice>
+         </inv:item>
+      </inv:items>
+      <inv:invoiceTaxBreakdowns>
+         <inv:invoiceTaxBreakdown>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatTaxableAmount>54545</inv:vatTaxableAmount>
+            <inv:vatTaxAmount>5455</inv:vatTaxAmount>
+         </inv:invoiceTaxBreakdown>
+      </inv:invoiceTaxBreakdowns>
+      <inv:totalAmountWithoutVAT>54545</inv:totalAmountWithoutVAT>
+      <inv:totalVATAmount>5455</inv:totalVATAmount>
+      <inv:totalAmountWithVAT>60000</inv:totalAmountWithVAT>
+      <inv:totalAmountWithVATInWords>Sáu mươi nghìn đồng chẵn</inv:totalAmountWithVATInWords>
+      <inv:discountAmount>0</inv:discountAmount>
+      <inv:isDiscountAmtPos>false</inv:isDiscountAmtPos>
+      <inv:userDefines>&lt;SO_BIEN_LAI&gt;7172e3a1717edf5aedbfd78fda813c28&lt;/SO_BIEN_LAI&gt;&lt;SO_DON_HANG&gt;&lt;/SO_DON_HANG&gt;&lt;NGUOI_LIEN_HE_GUI_HOA_DON&gt;&lt;/NGUOI_LIEN_HE_GUI_HOA_DON&gt;&lt;DIA_DIEM_GIAO_HANG&gt;&lt;/DIA_DIEM_GIAO_HANG&gt;&lt;NOI_XUAT_HOA_DON&gt;&lt;/NOI_XUAT_HOA_DON&gt;&lt;SO_HOP_DONG&gt;&lt;/SO_HOP_DONG&gt;&lt;GHI_CHU_NB&gt;&lt;/GHI_CHU_NB&gt;&lt;GHI_CHU_GIAO_HANG&gt;&lt;/GHI_CHU_GIAO_HANG&gt;&lt;PAYMENT_NOTES&gt;&lt;/PAYMENT_NOTES&gt;</inv:userDefines>
+   </inv:invoiceData>
+   <inv:controlData>
+      <inv:systemCode>LHD_THAISON</inv:systemCode>
+      <inv:qrCodeData>59385cc3-f0be-4a89-9702-dcfc637da9e3;0000000;01GTKT0/001;BG/19E;54545;5455;60000;0100686209-096;MOBIFONE THÀNH PHỐ HỒ CHÍ MINH 1 - CÔNG TY DỊCH VỤ MOBIFONE KHU VỰC 2 - CHI NHÁNH TỔNG CÔNG TY VIỄN THÔNG MOBIFONE;0309766008</inv:qrCodeData>
+   </inv:controlData>
+   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="seller">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="#data">
+            <Transforms>
+               <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+               <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>jvOxG0mlQw5NCsRiCzzaPshR3fY=</DigestValue>
+         </Reference>
+      </SignedInfo>
+      <SignatureValue>HQNyMiBcpyCVAk/7LZbfMfJ/JQc7W8dXYM5tL6syncKh0lI1klg3EnNsM6CuVMs6xIBKiSCkQUgUU/802y2u9dOyYjF3n/jrR7RwXeSAlbkhPozbKUHigyspvBMqu9+wCDhlzupeLHoG/I/M+5OqU9VbgnTuJP4WcstCC+6OiNkipaBXm1i2Ji2GlVR3HzC6GeO8VNUFZyRgMHB/jYajo1PgGNpmBmEFBlBBqO1986DC7Xh7YCw71NdyY19zDPwrtnRxIQjpDGgYUWVRg2zl+NmhERDhIBDdjDm/w0lfCgY+fIkdg2snRu6yw7B4+NSmwh71Lvz+KOusqjPh3GcscQ==</SignatureValue>
+      <KeyInfo>
+         <X509Data>
+            <X509Certificate>MIIFczCCBFugAwIBAgIQVAEBBDD9Gnb3AZhXjjP2FDANBgkqhkiG9w0BAQUFADBuMQswCQYDVQQGEwJWTjEYMBYGA1UEChMPRlBUIENvcnBvcmF0aW9uMR8wHQYDVQQLExZGUFQgSW5mb3JtYXRpb24gU3lzdGVtMSQwIgYDVQQDExtGUFQgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTkwNDIzMDg0MDIyWhcNMjAwNDI2MTcwMDAwWjCBvzFzMHEGA1UEAwxqTU9CSUZPTkUgIFRQIEjhu5IgQ0jDjSBNSU5IIDEtIEPDlE5HIFRZIERWIE1PQklGT05FIEtIVSBW4buwQyAyLSBDTiBU4buUTkcgQ8OUTkcgVFkgVknhu4ROIFRIw5RORyBNT0JJRk9ORTEbMBkGA1UECgwSTVNUOjAxMDA2ODYyMDktMDk2MR4wHAYDVQQHDBU0LzE4LzIwMTkgMTE6MDE6NTQgQU0xCzAJBgNVBAYTAlZOMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkHsdznmVr3nBvIs5yW8MYvCWW4lr6IDN/Z6ePZX896wtzroFUHb1/eJ7/mXkj020KGqQYvoKJ+umL5y0CJoPElbNMiYELu3pYUt/Wy4b1xmsS6reHQvSY8nR3dm8TRCOTzOsqv2lbSFQsnoD+rDre4l1GIsJejtUic2fyMqlYco8zZ7M6IXXcxtdoJfMzZdWKTLpNYYkmX8e7biivkpXpNHT0tS8voVl/GUxkZofRIulM3Ykcw1AMiDueoTFbDQ26NnTiy10TTQrwkagpHgN7XOyly+JQ/XOZk1u7r5xTLCsAZLU4+ay+QcDl/X7ADTSWMuYnobdXMO9ItcdjT7N9wIDAQABo4IBuTCCAbUwgZ4GCCsGAQUFBwEBBIGRMIGOMDcGCCsGAQUFBzAChitodHRwOi8vcHVibGljLnJvb3RjYS5nb3Yudm4vY3J0L21pY25yY2EuY3J0MC8GCCsGAQUFBzAChiNodHRwOi8vd3d3LmZpcy5jb20udm4vY3J0L2ZwdGNhLmNydDAiBggrBgEFBQcwAYYWaHR0cDovL29jc3AuZmlzLmNvbS52bjAdBgNVHQ4EFgQUp5wex0qGRGx9U6e0/B3GJBJ0meIwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBSz3nGSHEUdyZtP9xeVU86iTetZMjAZBgNVHSAEEjAQMA4GDCsGAQQBge0DAQQBBTAtBgNVHR8BAf8EIzAhMB+gHaAbhhlodHRwOi8vY3JsLmZpcy5jb20udm4vZ2V0MA4GA1UdDwEB/wQEAwIB/jBqBgNVHSUBAf8EYDBeBggrBgEFBQcDAQYIKwYBBQUHAwIGCCsGAQUFBwMDBggrBgEFBQcDBAYIKwYBBQUHAw8GCCsGAQUFBwMQBggrBgEFBQcDEQYKKwYBBAGCNxQCAgYKKwYBBAGCNwoDDDANBgkqhkiG9w0BAQUFAAOCAQEAtorJJZhhCSHdelOyFT/iCQgXlwAghLuB8BA1868aL9E8pn69lEQdOPi0udbYmR0X8zkTpTO0JrchG9l2cu2mxk5xjHPhmWeQC8sKBMZSF5Za6rlOD/BXoSj80TfxvkWSdEn2J2YtyDw3I93i99DXL7qYNXpvuMZWl3LsTnmFTdAlJtdS3+xKFaSdPNzJxZ/9pOJms44YSbaQsG2VlNROaNW1AxP4SOv8WAQAa84jYVWTlrtud/cIpc1upH6b51enbGusIm1pQ8Q5YLO7A2kcGoNjsndAc/b4kqLotva9F8QWNE23wM8xitO2/E+gXGcqnBEI6LwLAla6c8P6kJsavg==</X509Certificate>
+         </X509Data>
+      </KeyInfo>
+   </Signature>
+</inv:invoice>

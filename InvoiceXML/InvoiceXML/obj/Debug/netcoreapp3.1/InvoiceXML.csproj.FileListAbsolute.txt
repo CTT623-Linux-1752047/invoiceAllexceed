@@ -1,0 +1,13 @@
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\bin\Debug\netcoreapp3.1\InvoiceXML.exe
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\bin\Debug\netcoreapp3.1\InvoiceXML.deps.json
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\bin\Debug\netcoreapp3.1\InvoiceXML.runtimeconfig.json
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\bin\Debug\netcoreapp3.1\InvoiceXML.runtimeconfig.dev.json
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\bin\Debug\netcoreapp3.1\InvoiceXML.dll
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\bin\Debug\netcoreapp3.1\InvoiceXML.pdb
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.AssemblyInfoInputs.cache
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.AssemblyInfo.cs
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.csproj.CoreCompileInputs.cache
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.dll
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.pdb
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.genruntimeconfig.cache
+C:\Users\toanlm\Desktop\C#\InvoiceXML\InvoiceXML\obj\Debug\netcoreapp3.1\InvoiceXML.csprojAssemblyReference.cache

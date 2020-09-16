@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<inv:invoice xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:inv="http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1">
+  <inv:invoiceData id="c0630d79-f818-41a5-a5b8-b6ecbe0378d6">
+    <inv:sellerAppRecordId></inv:sellerAppRecordId>
+    <inv:invoiceAppRecordId>c0630d79-f818-41a5-a5b8-b6ecbe0378d6</inv:invoiceAppRecordId>
+    <inv:invoiceType>01GTKT</inv:invoiceType>
+    <inv:templateCode>01GTKT0/001</inv:templateCode>
+    <inv:invoiceSeries>QL/19E</inv:invoiceSeries>
+    <inv:invoiceNumber>0000646</inv:invoiceNumber>
+    <inv:invoiceName>Hóa đơn giá trị gia tăng</inv:invoiceName>
+    <inv:invoiceIssuedDate>2020-08-18T00:00:00.000+07:00</inv:invoiceIssuedDate>
+    <inv:currencyCode>VND</inv:currencyCode>
+    <inv:exchangeRate>1</inv:exchangeRate>
+    <inv:invoiceNote></inv:invoiceNote>
+    <inv:adjustmentType>1</inv:adjustmentType>
+    <inv:sellerLegalName>Công Ty TNHH Thương Mại Và Dịch Vụ Quỳnh Lan</inv:sellerLegalName>
+    <inv:sellerTaxCode>0304536836</inv:sellerTaxCode>
+    <inv:sellerAddressLine>56-58-60 Hai Bà Trưng, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh</inv:sellerAddressLine>
+    <inv:sellerPhoneNumber>(028) 3.8274949       -       Fax: (028) 3.8274848</inv:sellerPhoneNumber>
+    <inv:sellerEmail>nhungphan@tantao.com.vn</inv:sellerEmail>
+    <inv:sellerBankName>Ngân hàng ACB Hồ Chí Minh</inv:sellerBankName>
+    <inv:sellerBankAccount>56551019 </inv:sellerBankAccount>
+    <inv:sellerContactPersonName>Nguyễn Hữu Khôi</inv:sellerContactPersonName>
+    <inv:buyerDisplayName>CÔNG TY TNHH ALLEXCEED VIỆT NAM</inv:buyerDisplayName>
+    <inv:buyerLegalName>CÔNG TY TNHH ALLEXCEED VIỆT NAM</inv:buyerLegalName>
+    <inv:buyerTaxCode>0309766008</inv:buyerTaxCode>
+    <inv:buyerAddressLine>Số 56-58-60, Đường Hai Bà Trưng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</inv:buyerAddressLine>
+    <inv:buyerPhoneNumber></inv:buyerPhoneNumber>
+    <inv:buyerEmail>info@lantbuilding.com.vn</inv:buyerEmail>
+    <inv:buyerBankAccount></inv:buyerBankAccount>
+    <inv:payments>
+      <inv:payment>
+        <inv:paymentMethodName>Tiền mặt/Chuyển khoản</inv:paymentMethodName>
+        <inv:paymentAmount>1056000</inv:paymentAmount>
+      </inv:payment>
+    </inv:payments>
+    <inv:delivery></inv:delivery>
+    <inv:items>
+      <inv:item>
+        <inv:lineNumber>1</inv:lineNumber>
+        <inv:itemCode></inv:itemCode>
+        <inv:itemName>Tiền xe tháng 09.2020</inv:itemName>
+        <inv:unitCode></inv:unitCode>
+        <inv:unitName></inv:unitName>
+        <inv:unitPrice>0</inv:unitPrice>
+        <inv:quantity>0</inv:quantity>
+        <inv:itemTotalAmountWithoutVat>960000</inv:itemTotalAmountWithoutVat>
+        <inv:vatPercentage>10</inv:vatPercentage>
+        <inv:vatAmount>0</inv:vatAmount>
+        <inv:promotion>0</inv:promotion>
+      </inv:item>
+    </inv:items>
+    <inv:invoiceTaxBreakdowns>
+      <inv:invoiceTaxBreakdown>
+        <inv:vatPercentage>10</inv:vatPercentage>
+        <inv:vatTaxableAmount>960000</inv:vatTaxableAmount>
+        <inv:vatTaxAmount>96000</inv:vatTaxAmount>
+      </inv:invoiceTaxBreakdown>
+    </inv:invoiceTaxBreakdowns>
+    <inv:sumOfTotalLineAmountWithoutVAT>0</inv:sumOfTotalLineAmountWithoutVAT>
+    <inv:totalAmountWithoutVAT>960000</inv:totalAmountWithoutVAT>
+    <inv:totalVATAmount>96000</inv:totalVATAmount>
+    <inv:totalAmountWithVAT>1056000</inv:totalAmountWithVAT>
+    <inv:totalAmountWithVATFrn>0</inv:totalAmountWithVATFrn>
+    <inv:totalAmountWithVATInWords>Một triệu không trăm năm mươi sáu nghìn đồng chẵn</inv:totalAmountWithVATInWords>
+    <inv:discountAmount>0</inv:discountAmount>
+    <inv:isDiscountAmtPos>false</inv:isDiscountAmtPos>
+    <inv:userDefines></inv:userDefines>
+  </inv:invoiceData>
+  <inv:controlData>
+    <inv:systemCode></inv:systemCode>
+  </inv:controlData><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"></CanonicalizationMethod><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></SignatureMethod><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod><DigestValue>pnQjxSkEQmpXunwyqGYJmMLMzSw=</DigestValue></Reference></SignedInfo><SignatureValue>fg/XXZ5oc0Rt/WLH1TahEmXdV0KB72CNDcNk+tVnqL27HA2uCUi2wnBWoUAEErWhwSgWyTNUSgw8kOYdyeJ5XaqZbXbLVVAHcGOaAPJtn1BwhK+2N7xyoZeCBMhaUg6vIRqhBY58+6RkibdLyhv2rWUI1WhL+kt39Hk8KMjkjo0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zJlgvatodfWqglJw3pSiepIjpnQ8fp3WCcoDeh9nUUbMrrTs4yP1NHF/anhLx01KXf0Vnid5A1FNmgONDL2jDcKy85sP5af5ed+i2ifeiaXu2gaSxtnzhuBUwZJkU8m8UT1oDgPPLxP5HoH4+oRGBZKuoPSAAuoo06tSTzgwbvs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509IssuerSerial><X509IssuerName>CN=BkavCA, O=Bkav Corporation, L=Hanoi, C=VN</X509IssuerName><X509SerialNumber>111671822893655381134836263594718470421</X509SerialNumber></X509IssuerSerial><X509SubjectName>C=VN, ST=Hồ Chí Minh, CN=Công ty TNHH Thương Mại Và Dịch Vụ Quỳnh Lan, UID=MST:0304536836</X509SubjectName><X509Certificate>MIIEMzCCAxugAwIBAgIQVAM19LqnE+C423CYr0EhFTANBgkqhkiG9w0BAQUFADBJMQswCQYDVQQGEwJWTjEOMAwGA1UEBxMFSGFub2kxGTAXBgNVBAoTEEJrYXYgQ29ycG9yYXRpb24xDzANBgNVBAMTBkJrYXZDQTAeFw0xOTEyMDYwMjU4MjBaFw0yNDA1MTAwODAzMDdaMIGJMR4wHAYKCZImiZPyLGQBAQwOTVNUOjAzMDQ1MzY4MzYxQTA/BgNVBAMMOEPDtG5nIHR5IFROSEggVGjGsMahbmcgTeG6oWkgVsOgIEThu4tjaCBW4bulIFF14buzbmggTGFuMRcwFQYDVQQIDA5I4buTIENow60gTWluaDELMAkGA1UEBhMCVk4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMyZYL2raHX1qoJScN6UonqSI6Z0PH6d1gnKA3ofZ1FGzK607OMj9TRxf2p4S8dNSl39FZ4neQNRTZoDjQy9ow3CsvObD+Wn+Xnfoton3oml7toGksbZ84bgVMGSZFPJvFE9aA4Dzy8T+R6B+PqERgWSrqD0gALqKNOrUk84MG77AgMBAAGjggFYMIIBVDAxBggrBgEFBQcBAQQlMCMwIQYIKwYBBQUHMAGGFWh0dHA6Ly9vY3NwLmJrYXZjYS52bjAdBgNVHQ4EFgQUka/F2jW5A2jNph1U7XhJm5Pk4eQwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAWgBQesA9Il9/Qw2enRoQ7WDuIDVOUhjB/BgNVHR8EeDB2MHSgI6Ahhh9odHRwOi8vY3JsLmJrYXZjYS52bi9Ca2F2Q0EuY3Jsok2kSzBJMQ8wDQYDVQQDDAZCa2F2Q0ExGTAXBgNVBAoMEEJrYXYgQ29ycG9yYXRpb24xDjAMBgNVBAcMBUhhbm9pMQswCQYDVQQGEwJWTjAOBgNVHQ8BAf8EBAMCBPAwHwYDVR0lBBgwFgYIKwYBBQUHAwQGCisGAQQBgjcKAwwwHwYDVR0RBBgwFoEUbXlkdW5nQHRhbnRhby5jb20udm4wDQYJKoZIhvcNAQEFBQADggEBAF3MAZhxUzXT1BqQTRWRkmS+OPL1jz1ylX7uYdnb+njVd2dwBwnJ1mjK6IKF93Npxj/IPQdIiVivwzi1zXKB+8BxUS6+sANH14h8KzdM1DjH9xD3LVhKmdqBVHXl9enNZ9uFbctL6A62f9uC7nYHWhChSFgE5OaltMQFaG2HUNdVyV6OsjYE/M+znPmSQ7ldlPApL09/c0TBgVIV0zCd8LBUto/6oDIG+h6LK3vqoL1xQDJ4iCE6V3BPGSVXpHlF07Vw766/Dg5Am3kt3Ygn/0pgNIVAJ0hSKnRkZAtFLk6mzWF20Kpjd4xfQMAhVnXQt8+2/IAc1O3/D3QPbpc9wr8=</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="Timestamp" Target=""><date>2020/8/18</date><time>10:6:53</time><timezone>UTC +7</timezone></SignatureProperty></SignatureProperties></Object></Signature>
+</inv:invoice>
