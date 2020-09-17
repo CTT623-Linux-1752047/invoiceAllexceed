@@ -1,1 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type='text/xsl' href='mau_hoadon.xslt' ?><inv:invoice xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:inv="http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1"><inv:invoiceData id="data"><inv:sellerAppRecordId /><inv:invoiceAppRecordId>66266</inv:invoiceAppRecordId><inv:invoiceType>01GTKT</inv:invoiceType><inv:templateCode>01GTKT0/001</inv:templateCode><inv:invoiceSeries>SS/19E</inv:invoiceSeries><inv:invoiceNumber>0009786</inv:invoiceNumber><inv:invoiceName>Hóa đơn giá trị gia tăng</inv:invoiceName><inv:invoiceIssuedDate>2020-08-31T00:00:00</inv:invoiceIssuedDate><inv:signedDate>2020-08-31T00:00:00</inv:signedDate><inv:submittedDate>2020-08-31T00:00:00</inv:submittedDate><inv:contractNumber /><inv:currencyCode>VND</inv:currencyCode><inv:invoiceNote>B/L#: 10357492666/70</inv:invoiceNote><inv:adjustmentType>1</inv:adjustmentType><inv:additionalReferenceDesc /><inv:payments><inv:payment><inv:paymentMethodName>TM/CK</inv:paymentMethodName></inv:payment></inv:payments><inv:delivery><inv:containerNumber>MMTGN23A7</inv:containerNumber></inv:delivery><inv:sellerLegalName>Công Ty TNHH Sg Sagawa Việt Nam</inv:sellerLegalName><inv:sellerTaxCode>0313166148</inv:sellerTaxCode><inv:sellerAddressLine>Lô 117, Khu Công Nghiệp trong Khu Chế Xuất Sài Gòn - Linh Trung, P.Linh Trung, Q.Thủ Đức, TP.HCM</inv:sellerAddressLine><inv:sellerPhoneNumber /><inv:sellerFaxNumber /><inv:sellerEmail /><inv:sellerBankName>VCB-HCM</inv:sellerBankName><inv:sellerBankAccount> 0531002495456</inv:sellerBankAccount><inv:sellerContactPersonName /><inv:sellerSignedPersonName /><inv:sellerSubmittedPersonName /><inv:buyerDisplayName /><inv:buyerLegalName>CTY TNHH ALLEXCEED VIỆT NAM</inv:buyerLegalName><inv:buyerTaxCode>0309766008</inv:buyerTaxCode><inv:buyerAddressLine>56-58-60 Hai Bà Trưng, P.Bến Nghé, Quận 1, TP.HCM</inv:buyerAddressLine><inv:buyerPhoneNumber /><inv:buyerFaxNumber /><inv:buyerEmail>nganvh@allexceed.co.jp</inv:buyerEmail><inv:buyerBankName /><inv:buyerBankAccount /><inv:items><inv:item><inv:lineNumber>1</inv:lineNumber><inv:itemCode /><inv:itemName>Phí chuyển phát nhanh chứng từ/hàng hóa(EG) (EG-20082058)</inv:itemName><inv:unitCode>Lô</inv:unitCode><inv:unitName>Lô</inv:unitName><inv:quantity>1</inv:quantity><inv:itemTotalAmountWithoutVat>837720</inv:itemTotalAmountWithoutVat><inv:vatPercentage>10</inv:vatPercentage><inv:vatAmount>83772</inv:vatAmount><inv:unitPrice>837720</inv:unitPrice></inv:item><inv:item><inv:lineNumber>2</inv:lineNumber><inv:itemCode /><inv:itemName>Phụ phí xăng dầu(EG) (EG-20082058)</inv:itemName><inv:unitCode>Lô</inv:unitCode><inv:unitName>Lô</inv:unitName><inv:quantity>1</inv:quantity><inv:itemTotalAmountWithoutVat>41886</inv:itemTotalAmountWithoutVat><inv:vatPercentage>10</inv:vatPercentage><inv:vatAmount>4189</inv:vatAmount><inv:unitPrice>41886</inv:unitPrice></inv:item></inv:items><inv:invoiceTaxBreakdowns><inv:invoiceTaxBreakdown><inv:vatPercentage>10</inv:vatPercentage><inv:vatTaxableAmount>879606</inv:vatTaxableAmount><inv:vatTaxAmount>87961</inv:vatTaxAmount></inv:invoiceTaxBreakdown></inv:invoiceTaxBreakdowns><inv:totalAmountWithoutVAT>879606</inv:totalAmountWithoutVAT><inv:totalVATAmount>87961</inv:totalVATAmount><inv:totalAmountWithVAT>967567</inv:totalAmountWithVAT><inv:totalAmountWithVATInWords>Chín trăm sáu mươi bảy nghìn năm trăm sáu mươi bảy đồng</inv:totalAmountWithVATInWords><inv:discountAmount>0</inv:discountAmount><inv:isDiscountAmtPos>false</inv:isDiscountAmtPos><inv:userDefines>&lt;SO_BIEN_LAI&gt;SGVHCM2008PRGC5621&lt;/SO_BIEN_LAI&gt;&lt;MA_NCC&gt;&lt;/MA_NCC&gt;&lt;SO_DON_HANG&gt;&lt;/SO_DON_HANG&gt;&lt;NGUOI_LIEN_HE_GUI_HOA_DON&gt;&lt;/NGUOI_LIEN_HE_GUI_HOA_DON&gt;&lt;DIA_DIEM_GIAO_HANG&gt;&lt;/DIA_DIEM_GIAO_HANG&gt;&lt;NOI_XUAT_HOA_DON&gt;&lt;/NOI_XUAT_HOA_DON&gt;&lt;SO_HOP_DONG&gt;&lt;/SO_HOP_DONG&gt;&lt;GHI_CHU_NB&gt;&lt;/GHI_CHU_NB&gt;&lt;GHI_CHU_GIAO_HANG&gt;&lt;/GHI_CHU_GIAO_HANG&gt;&lt;GHI_CHU_DONG_BO&gt;&lt;/GHI_CHU_DONG_BO&gt;&lt;REF_NO&gt;&lt;/REF_NO&gt;&lt;PAYMENT_NOTES&gt;&lt;/PAYMENT_NOTES&gt;</inv:userDefines></inv:invoiceData><inv:controlData><inv:systemCode>LHD_THAISON</inv:systemCode><inv:qrCodeData>c1316637-93e2-4b80-af03-d6ade9cc043c;0009786;01GTKT0/001;SS/19E;879606;87961;967567;0313166148;Công Ty TNHH Sg Sagawa Việt Nam;0309766008</inv:qrCodeData></inv:controlData><Signature Id="seller" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#data"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fNaUpzk9eN8WkFqtc92aPYgNVOE=</DigestValue></Reference></SignedInfo><SignatureValue>yEGkJkb9T2tC7z3np8RMQlJbbQroihXWRh19oG/7hx2SRpzdUx2SUuISKUYeQiFykbh1/VnZTx741bLTsN9hTna5+N1YQhPD+hGczC3meek1J/OXfmLlvpjv6C5cVwDp2IqheUTjchcsl2VTSs6BBGmieSCaOAEOE/9Gi276VB4+SANFQgNDlX892hoOLZcGZk/3voR0Zt3FgHJTpkOiif6d18xa7bSgcDN7NCAHLYBKH02U1OzbyaxsjLYqZkZMp7p7OHz/SA2gO78PCgAcbKFq+tfIvQBZejVmrdoeJlnKDPo8//PBeESKRuYQ2AzJYRyiUtfCb9l0blcYg1/15A==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></inv:invoice>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='mau_hoadon.xslt' ?>
+<inv:invoice xmlns:inv="http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <inv:invoiceData id="data">
+      <inv:sellerAppRecordId />
+      <inv:invoiceAppRecordId>66266</inv:invoiceAppRecordId>
+      <inv:invoiceType>01GTKT</inv:invoiceType>
+      <inv:templateCode>01GTKT0/001</inv:templateCode>
+      <inv:invoiceSeries>SS/19E</inv:invoiceSeries>
+      <inv:invoiceNumber>0009786</inv:invoiceNumber>
+      <inv:invoiceName>Hóa đơn giá trị gia tăng</inv:invoiceName>
+      <inv:invoiceIssuedDate>2020-08-31T00:00:00</inv:invoiceIssuedDate>
+      <inv:signedDate>2020-08-31T00:00:00</inv:signedDate>
+      <inv:submittedDate>2020-08-31T00:00:00</inv:submittedDate>
+      <inv:contractNumber />
+      <inv:currencyCode>VND</inv:currencyCode>
+      <inv:invoiceNote>B/L#: 10357492666/70</inv:invoiceNote>
+      <inv:adjustmentType>1</inv:adjustmentType>
+      <inv:additionalReferenceDesc />
+      <inv:payments>
+         <inv:payment>
+            <inv:paymentMethodName>TM/CK</inv:paymentMethodName>
+         </inv:payment>
+      </inv:payments>
+      <inv:delivery>
+         <inv:containerNumber>MMTGN23A7</inv:containerNumber>
+      </inv:delivery>
+      <inv:sellerLegalName>Công Ty TNHH Sg Sagawa Việt Nam</inv:sellerLegalName>
+      <inv:sellerTaxCode>0313166148</inv:sellerTaxCode>
+      <inv:sellerAddressLine>Lô 117, Khu Công Nghiệp trong Khu Chế Xuất Sài Gòn - Linh Trung, P.Linh Trung, Q.Thủ Đức, TP.HCM</inv:sellerAddressLine>
+      <inv:sellerPhoneNumber />
+      <inv:sellerFaxNumber />
+      <inv:sellerEmail />
+      <inv:sellerBankName>VCB-HCM</inv:sellerBankName>
+      <inv:sellerBankAccount>0531002495456</inv:sellerBankAccount>
+      <inv:sellerContactPersonName />
+      <inv:sellerSignedPersonName />
+      <inv:sellerSubmittedPersonName />
+      <inv:buyerDisplayName />
+      <inv:buyerLegalName>CTY TNHH ALLEXCEED VIỆT NAM</inv:buyerLegalName>
+      <inv:buyerTaxCode>0309766008</inv:buyerTaxCode>
+      <inv:buyerAddressLine>56-58-60 Hai Bà Trưng, P.Bến Nghé, Quận 1, TP.HCM</inv:buyerAddressLine>
+      <inv:buyerPhoneNumber />
+      <inv:buyerFaxNumber />
+      <inv:buyerEmail>nganvh@allexceed.co.jp</inv:buyerEmail>
+      <inv:buyerBankName />
+      <inv:buyerBankAccount />
+      <inv:items>
+         <inv:item>
+            <inv:lineNumber>1</inv:lineNumber>
+            <inv:itemCode />
+            <inv:itemName>Phí chuyển phát nhanh chứng từ/hàng hóa(EG) (EG-20082058)</inv:itemName>
+            <inv:unitCode>Lô</inv:unitCode>
+            <inv:unitName>Lô</inv:unitName>
+            <inv:quantity>1</inv:quantity>
+            <inv:itemTotalAmountWithoutVat>837720</inv:itemTotalAmountWithoutVat>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatAmount>83772</inv:vatAmount>
+            <inv:unitPrice>837720</inv:unitPrice>
+         </inv:item>
+         <inv:item>
+            <inv:lineNumber>2</inv:lineNumber>
+            <inv:itemCode />
+            <inv:itemName>Phụ phí xăng dầu(EG) (EG-20082058)</inv:itemName>
+            <inv:unitCode>Lô</inv:unitCode>
+            <inv:unitName>Lô</inv:unitName>
+            <inv:quantity>1</inv:quantity>
+            <inv:itemTotalAmountWithoutVat>41886</inv:itemTotalAmountWithoutVat>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatAmount>4189</inv:vatAmount>
+            <inv:unitPrice>41886</inv:unitPrice>
+         </inv:item>
+      </inv:items>
+      <inv:invoiceTaxBreakdowns>
+         <inv:invoiceTaxBreakdown>
+            <inv:vatPercentage>10</inv:vatPercentage>
+            <inv:vatTaxableAmount>879606</inv:vatTaxableAmount>
+            <inv:vatTaxAmount>87961</inv:vatTaxAmount>
+         </inv:invoiceTaxBreakdown>
+      </inv:invoiceTaxBreakdowns>
+      <inv:totalAmountWithoutVAT>879606</inv:totalAmountWithoutVAT>
+      <inv:totalVATAmount>87961</inv:totalVATAmount>
+      <inv:totalAmountWithVAT>967567</inv:totalAmountWithVAT>
+      <inv:totalAmountWithVATInWords>Chín trăm sáu mươi bảy nghìn năm trăm sáu mươi bảy đồng</inv:totalAmountWithVATInWords>
+      <inv:discountAmount>0</inv:discountAmount>
+      <inv:isDiscountAmtPos>false</inv:isDiscountAmtPos>
+      <inv:userDefines>&lt;SO_BIEN_LAI&gt;SGVHCM2008PRGC5621&lt;/SO_BIEN_LAI&gt;&lt;MA_NCC&gt;&lt;/MA_NCC&gt;&lt;SO_DON_HANG&gt;&lt;/SO_DON_HANG&gt;&lt;NGUOI_LIEN_HE_GUI_HOA_DON&gt;&lt;/NGUOI_LIEN_HE_GUI_HOA_DON&gt;&lt;DIA_DIEM_GIAO_HANG&gt;&lt;/DIA_DIEM_GIAO_HANG&gt;&lt;NOI_XUAT_HOA_DON&gt;&lt;/NOI_XUAT_HOA_DON&gt;&lt;SO_HOP_DONG&gt;&lt;/SO_HOP_DONG&gt;&lt;GHI_CHU_NB&gt;&lt;/GHI_CHU_NB&gt;&lt;GHI_CHU_GIAO_HANG&gt;&lt;/GHI_CHU_GIAO_HANG&gt;&lt;GHI_CHU_DONG_BO&gt;&lt;/GHI_CHU_DONG_BO&gt;&lt;REF_NO&gt;&lt;/REF_NO&gt;&lt;PAYMENT_NOTES&gt;&lt;/PAYMENT_NOTES&gt;</inv:userDefines>
+   </inv:invoiceData>
+   <inv:controlData>
+      <inv:systemCode>LHD_THAISON</inv:systemCode>
+      <inv:qrCodeData>c1316637-93e2-4b80-af03-d6ade9cc043c;0009786;01GTKT0/001;SS/19E;879606;87961;967567;0313166148;Công Ty TNHH Sg Sagawa Việt Nam;0309766008</inv:qrCodeData>
+   </inv:controlData>
+   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="seller">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="#data">
+            <Transforms>
+               <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+               <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <DigestValue>fNaUpzk9eN8WkFqtc92aPYgNVOE=</DigestValue>
+         </Reference>
+      </SignedInfo>
+      <SignatureValue>yEGkJkb9T2tC7z3np8RMQlJbbQroihXWRh19oG/7hx2SRpzdUx2SUuISKUYeQiFykbh1/VnZTx741bLTsN9hTna5+N1YQhPD+hGczC3meek1J/OXfmLlvpjv6C5cVwDp2IqheUTjchcsl2VTSs6BBGmieSCaOAEOE/9Gi276VB4+SANFQgNDlX892hoOLZcGZk/3voR0Zt3FgHJTpkOiif6d18xa7bSgcDN7NCAHLYBKH02U1OzbyaxsjLYqZkZMp7p7OHz/SA2gO78PCgAcbKFq+tfIvQBZejVmrdoeJlnKDPo8//PBeESKRuYQ2AzJYRyiUtfCb9l0blcYg1/15A==</SignatureValue>
+      <KeyInfo>
+         <X509Data>
+            <X509Certificate>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</X509Certificate>
+         </X509Data>
+      </KeyInfo>
+   </Signature>
+</inv:invoice>
