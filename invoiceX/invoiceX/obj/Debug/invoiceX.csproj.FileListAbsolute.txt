@@ -2,9 +2,9 @@ C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\bin\Debug\invoiceX.exe.config
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\bin\Debug\invoiceX.exe
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\bin\Debug\invoiceX.pdb
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.csprojAssemblyReference.cache
-C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.Form1.resources
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.Properties.Resources.resources
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.csproj.GenerateResource.cache
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.csproj.CoreCompileInputs.cache
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.exe
 C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.pdb
+C:\Users\toanlm\Desktop\C#\invoiceX\invoiceX\obj\Debug\invoiceX.ReadXML.resources
