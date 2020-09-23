@@ -143,26 +143,28 @@
             this.xuấtFileToolStripMenuItem,
             this.thoátToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.menuToolStripMenuItem.Text = "File";
             // 
             // đọcFileToolStripMenuItem
             // 
             this.đọcFileToolStripMenuItem.Name = "đọcFileToolStripMenuItem";
-            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.đọcFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đọcFileToolStripMenuItem.Text = "Đọc file ";
             this.đọcFileToolStripMenuItem.Click += new System.EventHandler(this.đọcFileToolStripMenuItem_Click);
             // 
             // xuấtFileToolStripMenuItem
             // 
             this.xuấtFileToolStripMenuItem.Name = "xuấtFileToolStripMenuItem";
-            this.xuấtFileToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.xuấtFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.xuấtFileToolStripMenuItem.Text = "Xuất file ";
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -1183,7 +1185,7 @@
             this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.MinimumSize = new System.Drawing.Size(1066, 1000);
             this.Name = "ReadXML";
-            this.Text = "Form1";
+            this.Text = "ReadXML";
             this.Load += new System.EventHandler(this.Form1_Load);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

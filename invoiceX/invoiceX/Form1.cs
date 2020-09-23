@@ -17,6 +17,7 @@ namespace invoiceX
 {
     public partial class ReadXML : Form
     {
+
         private Invoice invoice; 
         public ReadXML()
         {
@@ -25,42 +26,49 @@ namespace invoiceX
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
             this.DragDrop += new DragEventHandler(Form1_DragDrop);
         }
-        void Form1_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
-        }
-
-        void Form1_DragDrop(object sender, DragEventArgs e)
-        {
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            foreach (string file in files) 
-                ShowInvoice(file);
-        }
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+                if ((invoiceX.Program.FileName1 != null))
+                {
+                if (!checkExtensionsPath(invoiceX.Program.FileName1))
+                { 
+                    MessageBox.Show("Không phải file XML");
+                    Close();
+                }
+                else
+                    ShowInvoice(invoiceX.Program.FileName1);   
+                }
         }
-
+        
+        void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+        void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            foreach (string file in files)
+                if (checkExtensionsPath(file))
+                    ShowInvoice(file);
+                else
+                    MessageBox.Show("không phải file XML");
+        }
         private void label15_Click(object sender, EventArgs e)
         {
 
         }
-
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
         private void đọcFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -143,13 +151,17 @@ namespace invoiceX
                 i++;
             }
         }
-        
-
-
-
         private void numberForm_Click(object sender, EventArgs e)
         {
-
+        }
+        private bool checkExtensionsPath(string link)
+        {
+            bool flag = false;
+           
+            String extensions = link.Substring(link.Length - 3, 3);
+            if (extensions.CompareTo("xml") == 0)
+                flag = true;
+            return flag;
         }
     }
 }
