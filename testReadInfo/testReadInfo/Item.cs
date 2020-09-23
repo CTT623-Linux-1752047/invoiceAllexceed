@@ -10,10 +10,14 @@ namespace testReadInfo
 {
     class ListItem
     {
-        List<Item> listItem;
+        List<Item> items;
 
         public ListItem() {
-            this.listItem = null;
+            this.items = new List<Item>() ;
+        }
+        public List<Item> Item
+        {
+            get { return this.items; }
         }
         public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager)
         {
@@ -26,7 +30,7 @@ namespace testReadInfo
                 XElement stt = item.XPathSelectElement("./inv:lineNumber", namespaceManager);
                 XElement itemName = item.XPathSelectElement("./inv:itemName", namespaceManager);
                 XElement unitName = item.XPathSelectElement("./inv:unitName", namespaceManager);
-                XElement quanity = item.XPathSelectElement("./inv:quanity", namespaceManager);
+                XElement quanity = item.XPathSelectElement("./inv:quanyity", namespaceManager);
                 XElement itemTotalAmountWithoutVAT = item.XPathSelectElement("./inv:itemTotalAmountWithoutVAT", namespaceManager);
                 XElement vatAmount = item.XPathSelectElement("./inv:vatAmount", namespaceManager);
                 XElement vatPercentage = item.XPathSelectElement("./inv:vatPercentage", namespaceManager);
@@ -35,15 +39,37 @@ namespace testReadInfo
                     temp.LineNumber = 0;
                 else
                     temp.LineNumber = int.Parse(stt.Value);
-
-                    
-
-
-
+                if (itemName == null)
+                    temp.ItemName = "";
+                else
+                    temp.ItemName = itemName.Value;
+                if (unitName == null)
+                    temp.UnitName = "";
+                else
+                    temp.UnitName = unitName.Value;
+                if (quanity == null)
+                    temp.Quanity = 0;
+                else
+                    temp.Quanity = int.Parse(quanity.Value);
+                if (itemTotalAmountWithoutVAT == null)
+                    temp.ItemToTalAmountWithoutVAT = 0;
+                else
+                    temp.ItemToTalAmountWithoutVAT = float.Parse(itemTotalAmountWithoutVAT.Value);
+                if (vatAmount == null)
+                    temp.VATAmount = 0;
+                else
+                    temp.VATAmount = float.Parse(vatAmount.Value);
+                if (vatPercentage == null)
+                    temp.VATPercentage = 0;
+                else
+                    temp.VATPercentage = float.Parse(vatPercentage.Value);
+                if (unitPrice == null)
+                    temp.UnitPrice = 0;
+                else
+                    temp.UnitPrice = float.Parse(unitPrice.Value);
+                this.items.Add(temp);
             }
-
         }
-
     }
     class Item
     {

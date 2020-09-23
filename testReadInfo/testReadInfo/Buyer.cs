@@ -69,8 +69,8 @@ namespace testReadInfo
             XElement buyerAddressLine = xelement.XPathSelectElement("./inv:invoiceData/inv:buyerAddressLine", namespaceManager);
             XElement buyerPaymentMethod = xelement.XPathSelectElement("./inv:invoiceData/inv:payments/inv:payment/inv:paymentMethodName", namespaceManager);
 
-            if(buyerDisplayName == null)
-                this.buyerName = "";
+            if(buyerDisplayName.Value == "")
+                this.buyerName = buyerLegalName.Value;
             else 
                 this.buyerName = buyerDisplayName.Value;
             if (buyerLegalName == null)
