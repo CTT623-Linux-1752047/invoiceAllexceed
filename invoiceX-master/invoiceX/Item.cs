@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SQLite;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -11,44 +10,90 @@ namespace invoiceX
 {
     class ListItem
     {
-        List<Item> items;
+        List<Item> item;
 
         public ListItem()
         {
-            this.items = new List<Item>();
+            this.item = new List<Item>();
         }
         public List<Item> Item
         {
-            get { return this.items; }
+            get { return this.item; }
         }
         public bool checkColumnDiscount()
         {
             bool flag = false; 
-            foreach(Item item in this.items)
+            foreach(Item item in this.item)
             {
                 if (item.ItemDscnAmnt == 0)
                     flag = true;
             }
             return flag;
         }
-        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager)
+        static SQLiteConnection CreateConnection()
+        {
+
+            SQLiteConnection sqlite_conn;
+            // Create a new database connection:
+            sqlite_conn = new SQLiteConnection(@"Data Source=C:..\\invoiceDB.db; Version = 3; New = True; Compress = True; ");
+            // Open the connection:
+            try
+            {
+                sqlite_conn.Open();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return sqlite_conn;
+        }
+
+        private static string ReadData(SQLiteConnection conn, string column, string table, int typeInvoice)
+        {
+            string myreader = "";
+            SQLiteDataReader sqlite_datareader;
+            SQLiteCommand sqlite_cmd;
+            sqlite_cmd = conn.CreateCommand();
+            sqlite_cmd.CommandText = "SELECT "+column+" FROM "+table+" WHERE InvoiceType = "+typeInvoice;
+            try
+            {
+                sqlite_datareader = sqlite_cmd.ExecuteReader();
+                while (sqlite_datareader.Read())
+                {
+                    myreader = sqlite_datareader.GetString(0);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return myreader;
+        }
+        private static void closeDB(SQLiteConnection conn)
+        {
+            conn.Close();
+        }
+        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager, int typeInvoice)
         {
             XElement xelement = XElement.Load(path);
-            XElement rootItem = xelement.XPathSelectElement("./inv:invoiceData/inv:items", namespaceManager);
+
+            SQLiteConnection conn = CreateConnection();
+            
+            XElement rootItem = xelement.XPathSelectElement(".//" + ReadData(conn,"Items","Item",typeInvoice), namespaceManager);
             IEnumerable<XElement> listItems = rootItem.Elements();
             foreach (XElement item in listItems)
             {
                 Item temp = new Item();
-                XElement stt = item.XPathSelectElement("./inv:lineNumber", namespaceManager);
-                XElement itemName = item.XPathSelectElement("./inv:itemName", namespaceManager);
-                XElement unitName = item.XPathSelectElement("./inv:unitName", namespaceManager);
-                XElement quantity = item.XPathSelectElement("./inv:quantity", namespaceManager);
-                XElement itemTotalAmountWithoutVAT = item.XPathSelectElement("./inv:itemTotalAmountWithoutVat", namespaceManager);
-                XElement vatAmount = item.XPathSelectElement("./inv:vatAmount", namespaceManager);
-                XElement vatPercentage = item.XPathSelectElement("./inv:vatPercentage", namespaceManager);
-                XElement discountAmount = item.XPathSelectElement("./inv:ItemDscnAmount", namespaceManager);
-                XElement unitPrice = item.XPathSelectElement("./inv:unitPrice", namespaceManager);
-
+                XElement stt = item.XPathSelectElement("./"+ ReadData(conn, "STT","Item", typeInvoice), namespaceManager);
+                XElement itemName = item.XPathSelectElement("./"+ ReadData(conn, "NameItem", "Item", typeInvoice), namespaceManager);
+                XElement unitName = item.XPathSelectElement("./" + ReadData(conn, "NameUnite", "Item", typeInvoice), namespaceManager);
+                XElement quantity = item.XPathSelectElement("./" + ReadData(conn, "Quantity", "Item", typeInvoice), namespaceManager);
+                XElement itemTotalAmountWithoutVAT = item.XPathSelectElement("./" + ReadData(conn, "ItemTotalAmountWithoutVAT", "Item", typeInvoice), namespaceManager);
+                XElement vatAmount = item.XPathSelectElement("./" + ReadData(conn, "VATAmount", "Item", typeInvoice), namespaceManager);
+                XElement vatPercentage = item.XPathSelectElement("./" + ReadData(conn, "VATPercentage", "Item", typeInvoice), namespaceManager);
+                XElement discountAmount = item.XPathSelectElement("./" + ReadData(conn, "Promotion", "Item", typeInvoice), namespaceManager);
+                XElement unitPrice = item.XPathSelectElement("./" + ReadData(conn, "PriceUnite", "Item", typeInvoice), namespaceManager);
+                
                 if (stt == null)
                     temp.LineNumber = 0;
                 else
@@ -93,8 +138,9 @@ namespace invoiceX
                     temp.UnitPrice = 0;
                 else
                     temp.UnitPrice = float.Parse(unitPrice.Value);
-                this.items.Add(temp);
+                this.item.Add(temp);
             }
+            closeDB(conn);
         }
     }
     class Item

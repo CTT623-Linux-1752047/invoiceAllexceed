@@ -36,21 +36,21 @@ namespace invoiceX
             }
             return sqlite_conn;
         }
-        private static string ReadData(SQLiteConnection conn, string column, string table, string condition)
+        private static string QueryNamespace(SQLiteConnection conn, string column, string table, string condition)
         {
             string myreader = "";
             int temp;
             SQLiteDataReader sqlite_datareader;
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
-            sqlite_cmd.CommandText = string.Format("SELECT ID FROM type_Invoice WHERE nameSpace LIKE \" % http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1%\"");
+            sqlite_cmd.CommandText = string.Format("SELECT " + column + " FROM " + table + " WHERE Namespace LIKE '%" + condition + "%'");
             try
             {
                 sqlite_datareader = sqlite_cmd.ExecuteReader();
                 while (sqlite_datareader.Read())
                 {
-                    temp = (int)sqlite_datareader.GetValue(0);
-                    MessageBox.Show("temp" + temp);
+                    
+                    myreader = Convert.ToString(sqlite_datareader["ID"]);
                 }
             }
             catch (Exception ex)
@@ -58,6 +58,27 @@ namespace invoiceX
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
             
+            return myreader;
+        }
+        private static string ReadData(SQLiteConnection conn, string column, string table, int typeInvoice)
+        {
+            string myreader = "";
+            SQLiteDataReader sqlite_datareader;
+            SQLiteCommand sqlite_cmd;
+            sqlite_cmd = conn.CreateCommand();
+            sqlite_cmd.CommandText =string.Format("SELECT "+column+" FROM "+table+" WHERE TypeInvoice = "+typeInvoice);
+            try
+            {
+                sqlite_datareader = sqlite_cmd.ExecuteReader();
+                while (sqlite_datareader.Read())
+                {
+                    myreader = sqlite_datareader.GetString(0);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             return myreader;
         }
         private static void Close(SQLiteConnection conn)
@@ -80,25 +101,30 @@ namespace invoiceX
             //Khoi tao NameTable va luu namespace;
             XmlNamespaceManager namespaceManager = new XmlNamespaceManager(new NameTable());
             namespaceManager.AddNamespace(PrefixNamespace, Namespace);
-            //so sanh namespace vua get va namespace co trong db de xac dinh type invoice 
+            
             //connect DB 
             conn = CreateConnection();
-            //get data from DB
-            string temp = "";
-            if (ReadData(conn, "ID", "type_Invoice", Namespace) != null)
+            //so sanh namespace vua get va namespace co trong db de xac dinh type invoice 
+            int temp = 0;
+            if (QueryNamespace(conn, "ID", "InvoiceType", Namespace) != null)
             {
-                temp = ReadData(conn, "ID", "type_Invoice", Namespace);
+                temp = int.Parse(QueryNamespace(conn, "ID", "InvoiceType", Namespace));
             }
+            MessageBox.Show("Loai hoa don " + temp);
+            //get cac truong trong invoice info theo id cua namespace vua get duoc 
+            try
+            {
+                XElement templateCode = xelement.XPathSelectElement(".//" + ReadData(conn, "TemplateCode", "InvoiceInfo", temp), namespaceManager);
+                XElement invoiceSeries = xelement.XPathSelectElement(".//" + ReadData(conn, "NumberSeries", "InvoiceInfo", temp), namespaceManager);
+                XElement invoiceNumber = xelement.XPathSelectElement(".//" + ReadData(conn, "NumberInvoice", "InvoiceInfo", temp), namespaceManager);
+                XElement date = xelement.XPathSelectElement(".//" + ReadData(conn, "Date", "InvoiceInfo", temp), namespaceManager);
+                XElement totalAmountWithVATWords = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalAmountWithVATWords", "InvoiceInfo", temp), namespaceManager);
+                XElement totalAmountWithoutVAT = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalAmountWithoutVAT", "InvoiceInfo", temp), namespaceManager);
+                XElement totalVATAmount = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalVATAmount", "InvoiceInfo", temp), namespaceManager);
+                XElement totalAmountWithVAT = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalAmountWithVAT", "InvoiceInfo", temp), namespaceManager);
+            
+           
             Close(conn);
-            MessageBox.Show("type " + temp);
-            XElement templateCode = xelement.XPathSelectElement("./inv:invoiceData/inv:templateCode", namespaceManager);
-            XElement invoiceSeries = xelement.XPathSelectElement("./inv:invoiceData/inv:invoiceSeries", namespaceManager);
-            XElement invoiceNumber = xelement.XPathSelectElement("./inv:invoiceData/inv:invoiceNumber", namespaceManager);
-            XElement date = xelement.XPathSelectElement("./inv:invoiceData/inv:invoiceIssuedDate", namespaceManager);
-            XElement totalAmountWithVATWords = xelement.XPathSelectElement("./inv:invoiceData/inv:totalAmountWithVATInWords", namespaceManager);
-            XElement totalAmountWithoutVAT = xelement.XPathSelectElement("./inv:invoiceData/inv:totalAmountWithoutVAT", namespaceManager);
-            XElement totalVATAmount = xelement.XPathSelectElement("./inv:invoiceData/inv:totalVATAmount", namespaceManager);
-            XElement totalAmountWithVAT = xelement.XPathSelectElement("./inv:invoiceData/inv:totalAmountWithVAT", namespaceManager);
             if (templateCode == null)
                 this.templateCode = "";
             else
@@ -153,13 +179,19 @@ namespace invoiceX
                 this.totalAmountWithVAT = float.Parse(totalAmountWithVAT.Value);
             // lay info Buyer
             buyer = new Buyer();
-            buyer.getInfoFromPath(path, namespaceManager);
+            buyer.getInfoFromPath(path, namespaceManager,temp);
             //lay info Seller
             seller = new Seller();
-            seller.getInfoFromPath(path, namespaceManager, conn, 1);
+            seller.getInfoFromPath(path, namespaceManager, conn, temp);
             //lay list item 
             listItem = new ListItem();
-            listItem.getInfoFromPath(path, namespaceManager);
+            listItem.getInfoFromPath(path, namespaceManager, temp);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("định dạng XML này chưa được lưu");
+                
+            }
         }
         public Invoice(Buyer buyer, Seller seller, List<Item> listitems,
                         string templateCode, string invoiceSeries, string invoiceNumber, string totalAmountWithVATWorks,

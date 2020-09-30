@@ -94,7 +94,7 @@ namespace invoiceX
             SQLiteDataReader sqlite_datareader;
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
-            sqlite_cmd.CommandText = "SELECT "+ column +" FROM " + table + " WHERE type_Invoice = " + typeInvoice;
+            sqlite_cmd.CommandText = "SELECT "+ column +" FROM " + table + " WHERE InvoiceType = " + typeInvoice;
             try
             {
                 sqlite_datareader = sqlite_cmd.ExecuteReader();
@@ -128,13 +128,13 @@ namespace invoiceX
             XElement sellerBankName = null;
             try
             {
-                sellerLegalName = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "legalName", "Seller", typeInvoice)), namespaceManager);
-                sellerTaxCode = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "taxCode", "Seller", typeInvoice)), namespaceManager);
-                sellerAddressLine = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "addressLine", "Seller", typeInvoice)), namespaceManager);
-                sellerPhoneNumber = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "phoneNumber", "Seller", typeInvoice)), namespaceManager);
-                sellerFaxNumber = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "faxNumber", "Seller", typeInvoice)), namespaceManager);
-                sellerBankAccount = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "bankAccount", "Seller", typeInvoice)), namespaceManager);
-                sellerBankName = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "bankName", "Seller", typeInvoice)), namespaceManager);
+                sellerLegalName = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "Name", "Seller", typeInvoice)), namespaceManager);
+                sellerTaxCode = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "Taxcode", "Seller", typeInvoice)), namespaceManager);
+                sellerAddressLine = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "Address", "Seller", typeInvoice)), namespaceManager);
+                sellerPhoneNumber = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "Phone", "Seller", typeInvoice)), namespaceManager);
+                sellerFaxNumber = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "Fax", "Seller", typeInvoice)), namespaceManager);
+                sellerBankAccount = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "BanKAccount", "Seller", typeInvoice)), namespaceManager);
+                sellerBankName = xelement.XPathSelectElement(".//" + String.Format(ReadData(conn, "BankName", "Seller", typeInvoice)), namespaceManager);
                 closeDB(conn);
             }
             finally
