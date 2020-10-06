@@ -13,7 +13,7 @@ namespace invoiceX
 {
     class Invoice
     {
-        private static SQLiteConnection conn;
+        private SQLiteConnection conn;
         private Buyer buyer;
         private Seller seller;
         private ListItem listItem;
@@ -24,19 +24,20 @@ namespace invoiceX
 
             SQLiteConnection sqlite_conn;
             // Create a new database connection:
-            sqlite_conn = new SQLiteConnection(@"Data Source=C:..\\invoiceDB.db; Version = 3; New = True; Compress = True; ");
+            sqlite_conn = new SQLiteConnection(@"Data Source="+ AppDomain.CurrentDomain.BaseDirectory + "invoiceDB.db; Version = 3; New = True; Compress = True; ");
             // Open the connection:
             try
             {
                 sqlite_conn.Open();
+                MessageBox.Show("connect OK");
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("error connect db : "+ex);
             }
             return sqlite_conn;
         }
-        private static string QueryNamespace(SQLiteConnection conn, string column, string table, string condition)
+        private string QueryNamespace(SQLiteConnection conn, string column, string table, string condition)
         {
             string myreader = "";
             int temp;
@@ -56,8 +57,7 @@ namespace invoiceX
             catch (Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-            
+            }   
             return myreader;
         }
         private static string ReadData(SQLiteConnection conn, string column, string table, int typeInvoice)
@@ -66,7 +66,7 @@ namespace invoiceX
             SQLiteDataReader sqlite_datareader;
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
-            sqlite_cmd.CommandText =string.Format("SELECT "+column+" FROM "+table+" WHERE TypeInvoice = "+typeInvoice);
+            sqlite_cmd.CommandText =string.Format("SELECT "+column+" FROM "+table+ " WHERE InvoiceType = " + typeInvoice);
             try
             {
                 sqlite_datareader = sqlite_cmd.ExecuteReader();
@@ -91,10 +91,10 @@ namespace invoiceX
             this.buyer = new Buyer();
             this.seller = new Seller();
             this.listItem = new ListItem();
+            
         }
         public void getInfoFromPath(string path)
         {
-            int type_Invoice = 0;
             XElement xelement = XElement.Load(path);
             string Namespace = xelement.Name.NamespaceName;
             string PrefixNamespace = xelement.GetPrefixOfNamespace(xelement.Name.Namespace);
@@ -106,9 +106,23 @@ namespace invoiceX
             conn = CreateConnection();
             //so sanh namespace vua get va namespace co trong db de xac dinh type invoice 
             int temp = 0;
-            if (QueryNamespace(conn, "ID", "InvoiceType", Namespace) != null)
+            if ((QueryNamespace(conn, "ID", "InvoiceType", Namespace) != null) && (QueryNamespace(conn, "ID", "InvoiceType", Namespace) != ""))
             {
                 temp = int.Parse(QueryNamespace(conn, "ID", "InvoiceType", Namespace));
+            }
+            else
+            {
+                DefineStructNametag define = new DefineStructNametag(path);
+                define.ShowDialog();
+                try
+                {
+                    temp = int.Parse(QueryNamespace(conn, "ID", "InvoiceType", Namespace));
+                }
+                catch
+                {
+                    MessageBox.Show("XML cần phải được định dạng trước khi mở !!! ");
+                    System.Windows.Forms.Application.Exit();
+                }
             }
             MessageBox.Show("Loai hoa don " + temp);
             //get cac truong trong invoice info theo id cua namespace vua get duoc 
@@ -122,70 +136,69 @@ namespace invoiceX
                 XElement totalAmountWithoutVAT = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalAmountWithoutVAT", "InvoiceInfo", temp), namespaceManager);
                 XElement totalVATAmount = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalVATAmount", "InvoiceInfo", temp), namespaceManager);
                 XElement totalAmountWithVAT = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalAmountWithVAT", "InvoiceInfo", temp), namespaceManager);
-            
-           
-            Close(conn);
-            if (templateCode == null)
-                this.templateCode = "";
-            else
-                this.templateCode = templateCode.Value;
-            if (invoiceSeries == null)
-                this.invoiceSeries = "";
-            else
-                this.invoiceSeries = invoiceSeries.Value;
-            if (invoiceNumber == null)
-                this.invoiceNumber = "";
-            else
-                this.invoiceNumber = invoiceNumber.Value;
-            if (date == null)
-            {
-                this.day = "00";
-                this.month = "00";
-                this.year = "xxxx";
-            }
-            else
-            {
-                if (date.Value.Contains("T"))
+                //dong DB
+                Close(conn);
+                if (templateCode == null)
+                    this.templateCode = "";
+                else
+                    this.templateCode = templateCode.Value;
+                if (invoiceSeries == null)
+                    this.invoiceSeries = "";
+                else
+                    this.invoiceSeries = invoiceSeries.Value;
+                if (invoiceNumber == null)
+                    this.invoiceNumber = "";
+                else
+                    this.invoiceNumber = invoiceNumber.Value;
+                if (date == null)
                 {
-                    string[] parseDateAndTime = date.Value.Split('T');
-                    string[] dateTemp = parseDateAndTime[0].Split('-');
-                    this.day = dateTemp[2];
-                    this.month = dateTemp[1];
-                    this.year = dateTemp[0];
+                    this.day = "00";
+                    this.month = "00";
+                    this.year = "xxxx";
                 }
                 else
                 {
-                    string[] dateTemp = date.Value.Split('/');
-                    this.day = dateTemp[0];
-                    this.month = dateTemp[1];
-                    this.year = dateTemp[2];
+                    if (date.Value.Contains("T"))
+                    {
+                        string[] parseDateAndTime = date.Value.Split('T');
+                        string[] dateTemp = parseDateAndTime[0].Split('-');
+                        this.day = dateTemp[2];
+                        this.month = dateTemp[1];
+                        this.year = dateTemp[0];
+                    }
+                    else
+                    {
+                        string[] dateTemp = date.Value.Split('/');
+                        this.day = dateTemp[0];
+                        this.month = dateTemp[1];
+                        this.year = dateTemp[2];
+                    }
                 }
-            }
-            if (totalAmountWithoutVAT == null)
-                this.totalAmountWithoutVAT = 0;
-            else
-                this.totalAmountWithoutVAT = float.Parse(totalAmountWithoutVAT.Value);
-            if (totalAmountWithVATWords == null)
-                this.totalAmountWithVATWords = "";
-            else
-                this.totalAmountWithVATWords = totalAmountWithVATWords.Value;
-            if (totalVATAmount == null)
-                this.totalVATAmount = 0;
-            else
-                this.totalVATAmount = float.Parse(totalVATAmount.Value);
-            if (totalAmountWithVAT == null)
-                this.totalAmountWithVAT = 0;
-            else
-                this.totalAmountWithVAT = float.Parse(totalAmountWithVAT.Value);
-            // lay info Buyer
-            buyer = new Buyer();
-            buyer.getInfoFromPath(path, namespaceManager,temp);
-            //lay info Seller
-            seller = new Seller();
-            seller.getInfoFromPath(path, namespaceManager, conn, temp);
-            //lay list item 
-            listItem = new ListItem();
-            listItem.getInfoFromPath(path, namespaceManager, temp);
+                if (totalAmountWithoutVAT == null)
+                    this.totalAmountWithoutVAT = 0;
+                else
+                    this.totalAmountWithoutVAT = float.Parse(totalAmountWithoutVAT.Value);
+                if (totalAmountWithVATWords == null)
+                    this.totalAmountWithVATWords = "";
+                else
+                    this.totalAmountWithVATWords = totalAmountWithVATWords.Value;
+                if (totalVATAmount == null)
+                    this.totalVATAmount = 0;
+                else
+                    this.totalVATAmount = float.Parse(totalVATAmount.Value);
+                if (totalAmountWithVAT == null)
+                    this.totalAmountWithVAT = 0;
+                else
+                    this.totalAmountWithVAT = float.Parse(totalAmountWithVAT.Value);
+                // lay info Buyer
+                buyer = new Buyer();
+                buyer.getInfoFromPath(path, namespaceManager,temp);
+                //lay info Seller
+                seller = new Seller();
+                seller.getInfoFromPath(path, namespaceManager, conn, temp);
+                //lay list item 
+                listItem = new ListItem();
+                listItem.getInfoFromPath(path, namespaceManager, temp);
             }
             catch (Exception ex)
             {

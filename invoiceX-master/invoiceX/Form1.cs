@@ -12,7 +12,6 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using System.Data.SQLite;
 
 namespace invoiceX
 {
@@ -20,9 +19,10 @@ namespace invoiceX
     {
        
         private Invoice invoice;
-       
+        private string path;
         public ReadXML()
         {
+                      
             InitializeComponent();
             this.AllowDrop = true;
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
@@ -36,15 +36,18 @@ namespace invoiceX
         private void Form1_Load(object sender, EventArgs e)
         {
             if ((invoiceX.Program.FileName1 != null))
-                {
+            {
                 if (!checkExtensionsPath(invoiceX.Program.FileName1))
-                { 
+                {
                     MessageBox.Show("Không phải file XML");
                     Close();
                 }
                 else
-                    ShowInvoice(invoiceX.Program.FileName1);   
+                {
+                   this.path = invoiceX.Program.FileName1;  
+                   this.ShowInvoice(invoiceX.Program.FileName1);
                 }
+            }
         }
         
         void Form1_DragEnter(object sender, DragEventArgs e)
@@ -56,7 +59,10 @@ namespace invoiceX
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             foreach (string file in files)
                 if (checkExtensionsPath(file))
+                {
+                    this.path = file;
                     ShowInvoice(file);
+                }
                 else
                     MessageBox.Show("không phải file XML");
         }
@@ -78,6 +84,7 @@ namespace invoiceX
             if(dlg.ShowDialog() == DialogResult.OK)
             {
                 string path = dlg.FileName;
+                this.path = path;
                 ShowInvoice(path);
             }
         }
@@ -162,6 +169,13 @@ namespace invoiceX
             if (extensions.CompareTo("xml") == 0)
                 flag = true;
             return flag;
+        }
+
+        private void cậpNhậtNamespaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            DefineStructNametag define = new DefineStructNametag(this.path);
+            define.ShowDialog();
         }
     }
 }

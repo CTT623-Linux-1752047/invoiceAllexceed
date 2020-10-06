@@ -106,6 +106,7 @@
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.label26 = new System.Windows.Forms.Label();
             this.totalAmountWithVATByWords = new System.Windows.Forms.Label();
+            this.cậpNhậtNamespaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -141,7 +142,8 @@
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đọcFileToolStripMenuItem,
             this.xuấtFileToolStripMenuItem,
-            this.thoátToolStripMenuItem});
+            this.thoátToolStripMenuItem,
+            this.cậpNhậtNamespaceToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.menuToolStripMenuItem.Text = "File";
@@ -150,21 +152,21 @@
             // 
             this.đọcFileToolStripMenuItem.Name = "đọcFileToolStripMenuItem";
             this.đọcFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.đọcFileToolStripMenuItem.Text = "Đọc file ";
             this.đọcFileToolStripMenuItem.Click += new System.EventHandler(this.đọcFileToolStripMenuItem_Click);
             // 
             // xuấtFileToolStripMenuItem
             // 
             this.xuấtFileToolStripMenuItem.Name = "xuấtFileToolStripMenuItem";
-            this.xuấtFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xuấtFileToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.xuấtFileToolStripMenuItem.Text = "Xuất file ";
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -1174,6 +1176,14 @@
             this.totalAmountWithVATByWords.Size = new System.Drawing.Size(746, 19);
             this.totalAmountWithVATByWords.TabIndex = 1;
             // 
+            // cậpNhậtNamespaceToolStripMenuItem
+            // 
+            this.cậpNhậtNamespaceToolStripMenuItem.Name = "cậpNhậtNamespaceToolStripMenuItem";
+            this.cậpNhậtNamespaceToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
+            this.cậpNhậtNamespaceToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.cậpNhậtNamespaceToolStripMenuItem.Text = "Cập nhật namespace";
+            this.cậpNhậtNamespaceToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtNamespaceToolStripMenuItem_Click);
+            // 
             // ReadXML
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1298,6 +1308,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripMenuItem cậpNhậtNamespaceToolStripMenuItem;
     }
 }
 
