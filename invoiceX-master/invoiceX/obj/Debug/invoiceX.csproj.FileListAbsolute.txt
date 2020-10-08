@@ -69,3 +69,7 @@ C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\obj\
 C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\obj\Debug\invoiceX.exe
 C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\obj\Debug\invoiceX.pdb
 C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\obj\Debug\invoiceX.DefineStructNametag.resources
+C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\bin\Debug\invoiceX.exe.manifest
+C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\bin\Debug\invoiceX.application
+C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\obj\Debug\invoiceX.exe.manifest
+C:\Users\toanlm\Desktop\C#\invoiceAllexceed-master\invoiceX-master\invoiceX\obj\Debug\invoiceX.application

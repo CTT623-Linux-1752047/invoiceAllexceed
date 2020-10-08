@@ -73,26 +73,39 @@ namespace invoiceX
         {
             conn.Close();
         }
-        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager, int typeInvoice)
+        public XElement XPathElement(XElement root, string read, XmlNamespaceManager namespaceManager)
+        {
+            XElement node = null;
+            try
+            {
+                node = root.XPathSelectElement("./" + read, namespaceManager);
+            }
+            catch(Exception ex)
+            {
+                node = null; 
+            }
+            return node;
+        }
+        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManagers, int typeInvoice)
         {
             XElement xelement = XElement.Load(path);
 
             SQLiteConnection conn = CreateConnection();
             
-            XElement rootItem = xelement.XPathSelectElement(".//" + ReadData(conn,"Items","Item",typeInvoice), namespaceManager);
+            XElement rootItem = xelement.XPathSelectElement(".//" + ReadData(conn,"Items","Item",typeInvoice), namespaceManagers);
             IEnumerable<XElement> listItems = rootItem.Elements();
             foreach (XElement item in listItems)
             {
                 Item temp = new Item();
-                XElement stt = item.XPathSelectElement("./"+ ReadData(conn, "STT","Item", typeInvoice), namespaceManager);
-                XElement itemName = item.XPathSelectElement("./"+ ReadData(conn, "NameItem", "Item", typeInvoice), namespaceManager);
-                XElement unitName = item.XPathSelectElement("./" + ReadData(conn, "NameUnite", "Item", typeInvoice), namespaceManager);
-                XElement quantity = item.XPathSelectElement("./" + ReadData(conn, "Quantity", "Item", typeInvoice), namespaceManager);
-                XElement itemTotalAmountWithoutVAT = item.XPathSelectElement("./" + ReadData(conn, "ItemTotalAmountWithoutVAT", "Item", typeInvoice), namespaceManager);
-                XElement vatAmount = item.XPathSelectElement("./" + ReadData(conn, "VATAmount", "Item", typeInvoice), namespaceManager);
-                XElement vatPercentage = item.XPathSelectElement("./" + ReadData(conn, "VATPercentage", "Item", typeInvoice), namespaceManager);
-                XElement discountAmount = item.XPathSelectElement("./" + ReadData(conn, "Promotion", "Item", typeInvoice), namespaceManager);
-                XElement unitPrice = item.XPathSelectElement("./" + ReadData(conn, "PriceUnite", "Item", typeInvoice), namespaceManager);
+                XElement stt = XPathElement(item, ReadData(conn, "STT", "Item", typeInvoice), namespaceManagers);
+                XElement itemName = XPathElement(item, ReadData(conn, "NameItem", "Item", typeInvoice), namespaceManagers);
+                XElement unitName = XPathElement(item, ReadData(conn, "NameUnite", "Item", typeInvoice), namespaceManagers);
+                XElement quantity = XPathElement(item, ReadData(conn, "Quantity", "Item", typeInvoice), namespaceManagers);
+                XElement itemTotalAmountWithoutVAT = XPathElement(item, ReadData(conn, "ItemTotalAmountWithoutVAT", "Item", typeInvoice), namespaceManagers);
+                XElement vatAmount = XPathElement(item, ReadData(conn, "VATAmount", "Item", typeInvoice), namespaceManagers);
+                XElement vatPercentage = XPathElement(item, ReadData(conn, "VATPercentage", "Item", typeInvoice), namespaceManagers);
+                XElement discountAmount = XPathElement(item, ReadData(conn, "Promotion", "Item", typeInvoice), namespaceManagers);
+                XElement unitPrice = XPathElement(item, ReadData(conn, "PriceUnite", "Item", typeInvoice), namespaceManagers);
                 
                 if (stt == null)
                     temp.LineNumber = 0;
@@ -128,7 +141,7 @@ namespace invoiceX
                     temp.VATPercentage = 0;
                 else
                     temp.VATPercentage = float.Parse(vatPercentage.Value);
-
+                
                 if (discountAmount == null)
                     temp.ItemDscnAmnt = 0;
                 else

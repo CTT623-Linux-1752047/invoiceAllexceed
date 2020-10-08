@@ -13,6 +13,7 @@ namespace invoiceX
 {
     class Seller
     {
+        private SQLiteConnection conn;
         private string sellerName, sellerTaxCode, sellerAddress, sellerTel, sellerAccountNo, sellerFaxNumber, bankName;
         public Seller()
         {
@@ -113,7 +114,7 @@ namespace invoiceX
         {
             conn.Close();
         }
-        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager, SQLiteConnection conn, int typeInvoice)
+        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager, int typeInvoice)
         {
             conn = CreateConnection();
             //MessageBox.Show("resualt : " + ReadData(conn, "legalName", "Seller"));

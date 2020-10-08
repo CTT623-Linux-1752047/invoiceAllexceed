@@ -29,11 +29,10 @@ namespace invoiceX
             try
             {
                 sqlite_conn.Open();
-                MessageBox.Show("connect OK");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("error connect db : "+ex);
+                MessageBox.Show("error connect db : " + ex);
             }
             return sqlite_conn;
         }
@@ -81,11 +80,10 @@ namespace invoiceX
             }
             return myreader;
         }
-        private static void Close(SQLiteConnection conn)
+        private static void CloseDB(SQLiteConnection conn)
         {
             conn.Close();
         }
-
         public Invoice()
         {
             this.buyer = new Buyer();
@@ -95,12 +93,19 @@ namespace invoiceX
         }
         public void getInfoFromPath(string path)
         {
+            
             XElement xelement = XElement.Load(path);
             string Namespace = xelement.Name.NamespaceName;
+            if(Namespace.Length == 0 )
+            {
+                MessageBox.Show("xml chưa được định dạng, không tồn tại namespace trong xml");
+                System.Windows.Forms.Application.Exit();
+            }
             string PrefixNamespace = xelement.GetPrefixOfNamespace(xelement.Name.Namespace);
             //Khoi tao NameTable va luu namespace;
             XmlNamespaceManager namespaceManager = new XmlNamespaceManager(new NameTable());
             namespaceManager.AddNamespace(PrefixNamespace, Namespace);
+            
             
             //connect DB 
             conn = CreateConnection();
@@ -124,7 +129,7 @@ namespace invoiceX
                     System.Windows.Forms.Application.Exit();
                 }
             }
-            MessageBox.Show("Loai hoa don " + temp);
+            //MessageBox.Show("Loai hoa don " + temp);
             //get cac truong trong invoice info theo id cua namespace vua get duoc 
             try
             {
@@ -137,7 +142,7 @@ namespace invoiceX
                 XElement totalVATAmount = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalVATAmount", "InvoiceInfo", temp), namespaceManager);
                 XElement totalAmountWithVAT = xelement.XPathSelectElement(".//" + ReadData(conn, "TotalAmountWithVAT", "InvoiceInfo", temp), namespaceManager);
                 //dong DB
-                Close(conn);
+                CloseDB(conn);
                 if (templateCode == null)
                     this.templateCode = "";
                 else
@@ -195,7 +200,7 @@ namespace invoiceX
                 buyer.getInfoFromPath(path, namespaceManager,temp);
                 //lay info Seller
                 seller = new Seller();
-                seller.getInfoFromPath(path, namespaceManager, conn, temp);
+                seller.getInfoFromPath(path, namespaceManager, temp);
                 //lay list item 
                 listItem = new ListItem();
                 listItem.getInfoFromPath(path, namespaceManager, temp);

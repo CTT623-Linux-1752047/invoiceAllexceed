@@ -32,18 +32,16 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxTotalAmountWithVATbyWords = new System.Windows.Forms.TextBox();
+            this.textBoxTotalAmountWithVAT = new System.Windows.Forms.TextBox();
+            this.textBoxTotalAmountWithoutVAT = new System.Windows.Forms.TextBox();
+            this.textBoxTotalVATAmount = new System.Windows.Forms.TextBox();
+            this.textBoxDate = new System.Windows.Forms.TextBox();
+            this.textBoxNumInv = new System.Windows.Forms.TextBox();
+            this.textBoxNumSeries = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,6 +50,20 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.textBoxTemplateCode = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxItemItems = new System.Windows.Forms.TextBox();
+            this.textBoxItemPromotion = new System.Windows.Forms.TextBox();
+            this.textBoxItemVATPercentage = new System.Windows.Forms.TextBox();
+            this.textBoxItemTotalAmountWithoutVAT = new System.Windows.Forms.TextBox();
+            this.textBoxItemTotalVATAmount = new System.Windows.Forms.TextBox();
+            this.textBoxUnitPrice = new System.Windows.Forms.TextBox();
+            this.textBoxQuantity = new System.Windows.Forms.TextBox();
+            this.textBoxUnitName = new System.Windows.Forms.TextBox();
+            this.textBoxItemName = new System.Windows.Forms.TextBox();
+            this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -62,6 +74,16 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxSellerBankName = new System.Windows.Forms.TextBox();
+            this.textBoxSellerBankAccount = new System.Windows.Forms.TextBox();
+            this.textBoxSellerFax = new System.Windows.Forms.TextBox();
+            this.textBoxSellerPhone = new System.Windows.Forms.TextBox();
+            this.textBoxSellerAddress = new System.Windows.Forms.TextBox();
+            this.textBoxSellerTaxCode = new System.Windows.Forms.TextBox();
+            this.textBoxSellerName = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -69,6 +91,16 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBoxBuyerPaymentMethod = new System.Windows.Forms.TextBox();
+            this.textBoxBuyerFax = new System.Windows.Forms.TextBox();
+            this.textBoxBuyerPhone = new System.Windows.Forms.TextBox();
+            this.textBoxBuyerAddress = new System.Windows.Forms.TextBox();
+            this.textBoxBuyerTaxCode = new System.Windows.Forms.TextBox();
+            this.textBoxBuyerLegalName = new System.Windows.Forms.TextBox();
+            this.textBoxBuyerDisplayName = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -76,45 +108,13 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.labelPath = new System.Windows.Forms.Label();
             this.labelNamespace = new System.Windows.Forms.Label();
-            this.textTemplateCode = new System.Windows.Forms.TextBox();
-            this.textBoxNumSeries = new System.Windows.Forms.TextBox();
-            this.textBoxNumInv = new System.Windows.Forms.TextBox();
-            this.textBoxDate = new System.Windows.Forms.TextBox();
-            this.textBoxTotalVATAmount = new System.Windows.Forms.TextBox();
-            this.textBoxTotalAmountWithoutVAT = new System.Windows.Forms.TextBox();
-            this.textBoxTotalAmountWithVAT = new System.Windows.Forms.TextBox();
-            this.textBoxTotalAmountWithVATbyWords = new System.Windows.Forms.TextBox();
-            this.textBoxNumber = new System.Windows.Forms.TextBox();
-            this.textBoxItemName = new System.Windows.Forms.TextBox();
-            this.textBoxUnitName = new System.Windows.Forms.TextBox();
-            this.textBoxQuantity = new System.Windows.Forms.TextBox();
-            this.textBoxUnitPrice = new System.Windows.Forms.TextBox();
-            this.textBox14ItemTotalVATAmount = new System.Windows.Forms.TextBox();
-            this.textBoxItemTotalAmountWithoutVAT = new System.Windows.Forms.TextBox();
-            this.textBoxItemVATPercentage = new System.Windows.Forms.TextBox();
-            this.textBoxItemPromotion = new System.Windows.Forms.TextBox();
-            this.textBoxItemItems = new System.Windows.Forms.TextBox();
-            this.textBoxSellerName = new System.Windows.Forms.TextBox();
-            this.textBoxSellerTaxCode = new System.Windows.Forms.TextBox();
-            this.textBoxSellerAddress = new System.Windows.Forms.TextBox();
-            this.textBoxSellerPhone = new System.Windows.Forms.TextBox();
-            this.textBoxSellerFax = new System.Windows.Forms.TextBox();
-            this.textBoxSellerBankAccount = new System.Windows.Forms.TextBox();
-            this.textBoxSellerBankName = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerDisplayName = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerLegalName = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerTaxCode = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerAddress = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerPhone = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerFax = new System.Windows.Forms.TextBox();
-            this.textBoxBuyerPaymentMethod = new System.Windows.Forms.TextBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -196,6 +196,18 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonUpdate.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.Location = new System.Drawing.Point(196, 20);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(110, 29);
+            this.buttonUpdate.TabIndex = 1;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.button2_Click);
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
@@ -210,20 +222,6 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(387, 372);
             this.tableLayoutPanel6.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(381, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "INVOICE INFOMATION";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel9
             // 
@@ -249,7 +247,7 @@
             this.tableLayoutPanel9.Controls.Add(this.label10, 0, 5);
             this.tableLayoutPanel9.Controls.Add(this.label11, 0, 6);
             this.tableLayoutPanel9.Controls.Add(this.label12, 0, 7);
-            this.tableLayoutPanel9.Controls.Add(this.textTemplateCode, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.textBoxTemplateCode, 1, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 40);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 8;
@@ -264,206 +262,103 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(381, 329);
             this.tableLayoutPanel9.TabIndex = 4;
             // 
-            // tableLayoutPanel5
+            // textBoxTotalAmountWithVATbyWords
             // 
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel10, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(396, 3);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(388, 372);
-            this.tableLayoutPanel5.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 3);
-            this.label2.Margin = new System.Windows.Forms.Padding(3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ITEM INFOMATION";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48F));
-            this.tableLayoutPanel10.Controls.Add(this.textBoxItemItems, 1, 9);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxItemPromotion, 1, 8);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxItemVATPercentage, 1, 7);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxItemTotalAmountWithoutVAT, 1, 6);
-            this.tableLayoutPanel10.Controls.Add(this.textBox14ItemTotalVATAmount, 1, 5);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxUnitPrice, 1, 4);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxQuantity, 1, 3);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxUnitName, 1, 2);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxItemName, 1, 1);
-            this.tableLayoutPanel10.Controls.Add(this.textBoxNumber, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label13, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label14, 0, 1);
-            this.tableLayoutPanel10.Controls.Add(this.label15, 0, 2);
-            this.tableLayoutPanel10.Controls.Add(this.label16, 0, 3);
-            this.tableLayoutPanel10.Controls.Add(this.label17, 0, 4);
-            this.tableLayoutPanel10.Controls.Add(this.label18, 0, 5);
-            this.tableLayoutPanel10.Controls.Add(this.label19, 0, 6);
-            this.tableLayoutPanel10.Controls.Add(this.label20, 0, 7);
-            this.tableLayoutPanel10.Controls.Add(this.label21, 0, 8);
-            this.tableLayoutPanel10.Controls.Add(this.label22, 0, 9);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 37);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 10;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(382, 335);
-            this.tableLayoutPanel10.TabIndex = 3;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel11, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 381);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(387, 296);
-            this.tableLayoutPanel3.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 3);
-            this.label3.Margin = new System.Windows.Forms.Padding(3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(381, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "SELLER";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerBankName, 1, 6);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerBankAccount, 1, 5);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerFax, 1, 4);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerPhone, 1, 3);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerAddress, 1, 2);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerTaxCode, 1, 1);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerName, 1, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label23, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label24, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.label25, 0, 2);
-            this.tableLayoutPanel11.Controls.Add(this.label26, 0, 3);
-            this.tableLayoutPanel11.Controls.Add(this.label27, 0, 4);
-            this.tableLayoutPanel11.Controls.Add(this.label28, 0, 5);
-            this.tableLayoutPanel11.Controls.Add(this.label29, 0, 6);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 32);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 7;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(381, 261);
-            this.tableLayoutPanel11.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel12, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(396, 381);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(388, 296);
-            this.tableLayoutPanel4.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 3);
-            this.label4.Margin = new System.Windows.Forms.Padding(3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(382, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "BUYER";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel12
-            // 
-            this.tableLayoutPanel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBoxTotalAmountWithVATbyWords.AllowDrop = true;
+            this.textBoxTotalAmountWithVATbyWords.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerPaymentMethod, 1, 6);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerFax, 1, 5);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerPhone, 1, 4);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerAddress, 1, 3);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerTaxCode, 1, 2);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerLegalName, 1, 1);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerDisplayName, 1, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label30, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label31, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.label32, 0, 2);
-            this.tableLayoutPanel12.Controls.Add(this.label33, 0, 3);
-            this.tableLayoutPanel12.Controls.Add(this.label34, 0, 4);
-            this.tableLayoutPanel12.Controls.Add(this.label35, 0, 5);
-            this.tableLayoutPanel12.Controls.Add(this.label36, 0, 6);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 32);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 7;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(382, 261);
-            this.tableLayoutPanel12.TabIndex = 2;
+            this.textBoxTotalAmountWithVATbyWords.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxTotalAmountWithVATbyWords.Location = new System.Drawing.Point(201, 290);
+            this.textBoxTotalAmountWithVATbyWords.Name = "textBoxTotalAmountWithVATbyWords";
+            this.textBoxTotalAmountWithVATbyWords.Size = new System.Drawing.Size(177, 20);
+            this.textBoxTotalAmountWithVATbyWords.TabIndex = 15;
+            this.textBoxTotalAmountWithVATbyWords.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxTotalAmountWithVATbyWords.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxTotalAmountWithVAT
+            // 
+            this.textBoxTotalAmountWithVAT.AllowDrop = true;
+            this.textBoxTotalAmountWithVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTotalAmountWithVAT.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxTotalAmountWithVAT.Location = new System.Drawing.Point(201, 249);
+            this.textBoxTotalAmountWithVAT.Name = "textBoxTotalAmountWithVAT";
+            this.textBoxTotalAmountWithVAT.Size = new System.Drawing.Size(177, 20);
+            this.textBoxTotalAmountWithVAT.TabIndex = 14;
+            this.textBoxTotalAmountWithVAT.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxTotalAmountWithVAT.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxTotalAmountWithoutVAT
+            // 
+            this.textBoxTotalAmountWithoutVAT.AllowDrop = true;
+            this.textBoxTotalAmountWithoutVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTotalAmountWithoutVAT.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxTotalAmountWithoutVAT.Location = new System.Drawing.Point(201, 208);
+            this.textBoxTotalAmountWithoutVAT.Name = "textBoxTotalAmountWithoutVAT";
+            this.textBoxTotalAmountWithoutVAT.Size = new System.Drawing.Size(177, 20);
+            this.textBoxTotalAmountWithoutVAT.TabIndex = 13;
+            this.textBoxTotalAmountWithoutVAT.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxTotalAmountWithoutVAT.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxTotalVATAmount
+            // 
+            this.textBoxTotalVATAmount.AllowDrop = true;
+            this.textBoxTotalVATAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTotalVATAmount.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxTotalVATAmount.Location = new System.Drawing.Point(201, 167);
+            this.textBoxTotalVATAmount.Name = "textBoxTotalVATAmount";
+            this.textBoxTotalVATAmount.Size = new System.Drawing.Size(177, 20);
+            this.textBoxTotalVATAmount.TabIndex = 12;
+            this.textBoxTotalVATAmount.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxTotalVATAmount.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxDate
+            // 
+            this.textBoxDate.AllowDrop = true;
+            this.textBoxDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxDate.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxDate.Location = new System.Drawing.Point(201, 126);
+            this.textBoxDate.Name = "textBoxDate";
+            this.textBoxDate.Size = new System.Drawing.Size(177, 20);
+            this.textBoxDate.TabIndex = 11;
+            this.textBoxDate.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxDate.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxNumInv
+            // 
+            this.textBoxNumInv.AllowDrop = true;
+            this.textBoxNumInv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNumInv.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxNumInv.Location = new System.Drawing.Point(201, 85);
+            this.textBoxNumInv.Name = "textBoxNumInv";
+            this.textBoxNumInv.Size = new System.Drawing.Size(177, 20);
+            this.textBoxNumInv.TabIndex = 10;
+            this.textBoxNumInv.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxNumInv.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxNumSeries
+            // 
+            this.textBoxNumSeries.AllowDrop = true;
+            this.textBoxNumSeries.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNumSeries.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxNumSeries.Location = new System.Drawing.Point(201, 44);
+            this.textBoxNumSeries.Name = "textBoxNumSeries";
+            this.textBoxNumSeries.Size = new System.Drawing.Size(177, 20);
+            this.textBoxNumSeries.TabIndex = 9;
+            this.textBoxNumSeries.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxNumSeries.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
             // 
             // label5
             // 
@@ -578,6 +473,233 @@
             this.label12.TabIndex = 7;
             this.label12.Text = "Total amount with VAT by words :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBoxTemplateCode
+            // 
+            this.textBoxTemplateCode.AllowDrop = true;
+            this.textBoxTemplateCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxTemplateCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxTemplateCode.Location = new System.Drawing.Point(201, 3);
+            this.textBoxTemplateCode.Name = "textBoxTemplateCode";
+            this.textBoxTemplateCode.Size = new System.Drawing.Size(177, 20);
+            this.textBoxTemplateCode.TabIndex = 8;
+            this.textBoxTemplateCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxTemplateCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(381, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "INVOICE INFOMATION";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel10, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(396, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(388, 372);
+            this.tableLayoutPanel5.TabIndex = 7;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48F));
+            this.tableLayoutPanel10.Controls.Add(this.textBoxItemItems, 1, 9);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxItemPromotion, 1, 8);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxItemVATPercentage, 1, 7);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxItemTotalAmountWithoutVAT, 1, 6);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxItemTotalVATAmount, 1, 5);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxUnitPrice, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxQuantity, 1, 3);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxUnitName, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxItemName, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.textBoxNumber, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label13, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label14, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.label15, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.label16, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.label17, 0, 4);
+            this.tableLayoutPanel10.Controls.Add(this.label18, 0, 5);
+            this.tableLayoutPanel10.Controls.Add(this.label19, 0, 6);
+            this.tableLayoutPanel10.Controls.Add(this.label20, 0, 7);
+            this.tableLayoutPanel10.Controls.Add(this.label21, 0, 8);
+            this.tableLayoutPanel10.Controls.Add(this.label22, 0, 9);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 37);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 10;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(382, 335);
+            this.tableLayoutPanel10.TabIndex = 3;
+            // 
+            // textBoxItemItems
+            // 
+            this.textBoxItemItems.AllowDrop = true;
+            this.textBoxItemItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxItemItems.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxItemItems.Location = new System.Drawing.Point(201, 300);
+            this.textBoxItemItems.Name = "textBoxItemItems";
+            this.textBoxItemItems.Size = new System.Drawing.Size(178, 20);
+            this.textBoxItemItems.TabIndex = 19;
+            this.textBoxItemItems.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxItemItems.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxItemPromotion
+            // 
+            this.textBoxItemPromotion.AllowDrop = true;
+            this.textBoxItemPromotion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxItemPromotion.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxItemPromotion.Location = new System.Drawing.Point(201, 267);
+            this.textBoxItemPromotion.Name = "textBoxItemPromotion";
+            this.textBoxItemPromotion.Size = new System.Drawing.Size(178, 20);
+            this.textBoxItemPromotion.TabIndex = 18;
+            this.textBoxItemPromotion.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxItemPromotion.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxItemVATPercentage
+            // 
+            this.textBoxItemVATPercentage.AllowDrop = true;
+            this.textBoxItemVATPercentage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxItemVATPercentage.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxItemVATPercentage.Location = new System.Drawing.Point(201, 234);
+            this.textBoxItemVATPercentage.Name = "textBoxItemVATPercentage";
+            this.textBoxItemVATPercentage.Size = new System.Drawing.Size(178, 20);
+            this.textBoxItemVATPercentage.TabIndex = 17;
+            this.textBoxItemVATPercentage.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxItemVATPercentage.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxItemTotalAmountWithoutVAT
+            // 
+            this.textBoxItemTotalAmountWithoutVAT.AllowDrop = true;
+            this.textBoxItemTotalAmountWithoutVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxItemTotalAmountWithoutVAT.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxItemTotalAmountWithoutVAT.Location = new System.Drawing.Point(201, 201);
+            this.textBoxItemTotalAmountWithoutVAT.Name = "textBoxItemTotalAmountWithoutVAT";
+            this.textBoxItemTotalAmountWithoutVAT.Size = new System.Drawing.Size(178, 20);
+            this.textBoxItemTotalAmountWithoutVAT.TabIndex = 16;
+            this.textBoxItemTotalAmountWithoutVAT.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxItemTotalAmountWithoutVAT.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxItemTotalVATAmount
+            // 
+            this.textBoxItemTotalVATAmount.AllowDrop = true;
+            this.textBoxItemTotalVATAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxItemTotalVATAmount.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxItemTotalVATAmount.Location = new System.Drawing.Point(201, 168);
+            this.textBoxItemTotalVATAmount.Name = "textBoxItemTotalVATAmount";
+            this.textBoxItemTotalVATAmount.Size = new System.Drawing.Size(178, 20);
+            this.textBoxItemTotalVATAmount.TabIndex = 15;
+            this.textBoxItemTotalVATAmount.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxItemTotalVATAmount.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxUnitPrice
+            // 
+            this.textBoxUnitPrice.AllowDrop = true;
+            this.textBoxUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxUnitPrice.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxUnitPrice.Location = new System.Drawing.Point(201, 135);
+            this.textBoxUnitPrice.Name = "textBoxUnitPrice";
+            this.textBoxUnitPrice.Size = new System.Drawing.Size(178, 20);
+            this.textBoxUnitPrice.TabIndex = 14;
+            this.textBoxUnitPrice.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxUnitPrice.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxQuantity
+            // 
+            this.textBoxQuantity.AllowDrop = true;
+            this.textBoxQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxQuantity.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxQuantity.Location = new System.Drawing.Point(201, 102);
+            this.textBoxQuantity.Name = "textBoxQuantity";
+            this.textBoxQuantity.Size = new System.Drawing.Size(178, 20);
+            this.textBoxQuantity.TabIndex = 13;
+            this.textBoxQuantity.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxQuantity.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxUnitName
+            // 
+            this.textBoxUnitName.AllowDrop = true;
+            this.textBoxUnitName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxUnitName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxUnitName.Location = new System.Drawing.Point(201, 69);
+            this.textBoxUnitName.Name = "textBoxUnitName";
+            this.textBoxUnitName.Size = new System.Drawing.Size(178, 20);
+            this.textBoxUnitName.TabIndex = 12;
+            this.textBoxUnitName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxUnitName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxItemName
+            // 
+            this.textBoxItemName.AllowDrop = true;
+            this.textBoxItemName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxItemName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxItemName.Location = new System.Drawing.Point(201, 36);
+            this.textBoxItemName.Name = "textBoxItemName";
+            this.textBoxItemName.Size = new System.Drawing.Size(178, 20);
+            this.textBoxItemName.TabIndex = 11;
+            this.textBoxItemName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxItemName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxNumber
+            // 
+            this.textBoxNumber.AllowDrop = true;
+            this.textBoxNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNumber.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxNumber.Location = new System.Drawing.Point(201, 3);
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.Size = new System.Drawing.Size(178, 20);
+            this.textBoxNumber.TabIndex = 10;
+            this.textBoxNumber.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxNumber.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
             // 
             // label13
             // 
@@ -719,6 +841,167 @@
             this.label22.Text = "Items : ";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 3);
+            this.label2.Margin = new System.Windows.Forms.Padding(3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(382, 31);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ITEM INFOMATION";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel11, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 381);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(387, 296);
+            this.tableLayoutPanel3.TabIndex = 8;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerBankName, 1, 6);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerBankAccount, 1, 5);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerFax, 1, 4);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerPhone, 1, 3);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerAddress, 1, 2);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerTaxCode, 1, 1);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxSellerName, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label23, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.label24, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.label25, 0, 2);
+            this.tableLayoutPanel11.Controls.Add(this.label26, 0, 3);
+            this.tableLayoutPanel11.Controls.Add(this.label27, 0, 4);
+            this.tableLayoutPanel11.Controls.Add(this.label28, 0, 5);
+            this.tableLayoutPanel11.Controls.Add(this.label29, 0, 6);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 32);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 7;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(381, 261);
+            this.tableLayoutPanel11.TabIndex = 1;
+            // 
+            // textBoxSellerBankName
+            // 
+            this.textBoxSellerBankName.AllowDrop = true;
+            this.textBoxSellerBankName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerBankName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerBankName.Location = new System.Drawing.Point(193, 225);
+            this.textBoxSellerBankName.Name = "textBoxSellerBankName";
+            this.textBoxSellerBankName.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerBankName.TabIndex = 15;
+            this.textBoxSellerBankName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerBankName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxSellerBankAccount
+            // 
+            this.textBoxSellerBankAccount.AllowDrop = true;
+            this.textBoxSellerBankAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerBankAccount.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerBankAccount.Location = new System.Drawing.Point(193, 188);
+            this.textBoxSellerBankAccount.Name = "textBoxSellerBankAccount";
+            this.textBoxSellerBankAccount.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerBankAccount.TabIndex = 14;
+            this.textBoxSellerBankAccount.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerBankAccount.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxSellerFax
+            // 
+            this.textBoxSellerFax.AllowDrop = true;
+            this.textBoxSellerFax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerFax.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerFax.Location = new System.Drawing.Point(193, 151);
+            this.textBoxSellerFax.Name = "textBoxSellerFax";
+            this.textBoxSellerFax.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerFax.TabIndex = 13;
+            this.textBoxSellerFax.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerFax.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxSellerPhone
+            // 
+            this.textBoxSellerPhone.AllowDrop = true;
+            this.textBoxSellerPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerPhone.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerPhone.Location = new System.Drawing.Point(193, 114);
+            this.textBoxSellerPhone.Name = "textBoxSellerPhone";
+            this.textBoxSellerPhone.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerPhone.TabIndex = 12;
+            this.textBoxSellerPhone.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerPhone.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxSellerAddress
+            // 
+            this.textBoxSellerAddress.AllowDrop = true;
+            this.textBoxSellerAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerAddress.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerAddress.Location = new System.Drawing.Point(193, 77);
+            this.textBoxSellerAddress.Name = "textBoxSellerAddress";
+            this.textBoxSellerAddress.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerAddress.TabIndex = 11;
+            this.textBoxSellerAddress.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerAddress.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxSellerTaxCode
+            // 
+            this.textBoxSellerTaxCode.AllowDrop = true;
+            this.textBoxSellerTaxCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerTaxCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerTaxCode.Location = new System.Drawing.Point(193, 40);
+            this.textBoxSellerTaxCode.Name = "textBoxSellerTaxCode";
+            this.textBoxSellerTaxCode.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerTaxCode.TabIndex = 10;
+            this.textBoxSellerTaxCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerTaxCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxSellerName
+            // 
+            this.textBoxSellerName.AllowDrop = true;
+            this.textBoxSellerName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSellerName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxSellerName.Location = new System.Drawing.Point(193, 3);
+            this.textBoxSellerName.Name = "textBoxSellerName";
+            this.textBoxSellerName.Size = new System.Drawing.Size(185, 20);
+            this.textBoxSellerName.TabIndex = 9;
+            this.textBoxSellerName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxSellerName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -816,6 +1099,162 @@
             this.label29.TabIndex = 6;
             this.label29.Text = "Bank Name : ";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 3);
+            this.label3.Margin = new System.Windows.Forms.Padding(3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(381, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "SELLER";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel12, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(396, 381);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(388, 296);
+            this.tableLayoutPanel4.TabIndex = 9;
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel12.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerPaymentMethod, 1, 6);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerFax, 1, 5);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerPhone, 1, 4);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerAddress, 1, 3);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerTaxCode, 1, 2);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerLegalName, 1, 1);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxBuyerDisplayName, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.label30, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.label31, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.label32, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.label33, 0, 3);
+            this.tableLayoutPanel12.Controls.Add(this.label34, 0, 4);
+            this.tableLayoutPanel12.Controls.Add(this.label35, 0, 5);
+            this.tableLayoutPanel12.Controls.Add(this.label36, 0, 6);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 32);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 7;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(382, 261);
+            this.tableLayoutPanel12.TabIndex = 2;
+            // 
+            // textBoxBuyerPaymentMethod
+            // 
+            this.textBoxBuyerPaymentMethod.AllowDrop = true;
+            this.textBoxBuyerPaymentMethod.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerPaymentMethod.Location = new System.Drawing.Point(194, 225);
+            this.textBoxBuyerPaymentMethod.Name = "textBoxBuyerPaymentMethod";
+            this.textBoxBuyerPaymentMethod.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerPaymentMethod.TabIndex = 15;
+            this.textBoxBuyerPaymentMethod.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerPaymentMethod.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxBuyerFax
+            // 
+            this.textBoxBuyerFax.AllowDrop = true;
+            this.textBoxBuyerFax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerFax.Location = new System.Drawing.Point(194, 188);
+            this.textBoxBuyerFax.Name = "textBoxBuyerFax";
+            this.textBoxBuyerFax.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerFax.TabIndex = 14;
+            this.textBoxBuyerFax.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerFax.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxBuyerPhone
+            // 
+            this.textBoxBuyerPhone.AllowDrop = true;
+            this.textBoxBuyerPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerPhone.Location = new System.Drawing.Point(194, 151);
+            this.textBoxBuyerPhone.Name = "textBoxBuyerPhone";
+            this.textBoxBuyerPhone.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerPhone.TabIndex = 13;
+            this.textBoxBuyerPhone.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerPhone.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxBuyerAddress
+            // 
+            this.textBoxBuyerAddress.AllowDrop = true;
+            this.textBoxBuyerAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerAddress.Location = new System.Drawing.Point(194, 114);
+            this.textBoxBuyerAddress.Name = "textBoxBuyerAddress";
+            this.textBoxBuyerAddress.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerAddress.TabIndex = 12;
+            this.textBoxBuyerAddress.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerAddress.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxBuyerTaxCode
+            // 
+            this.textBoxBuyerTaxCode.AllowDrop = true;
+            this.textBoxBuyerTaxCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerTaxCode.Location = new System.Drawing.Point(194, 77);
+            this.textBoxBuyerTaxCode.Name = "textBoxBuyerTaxCode";
+            this.textBoxBuyerTaxCode.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerTaxCode.TabIndex = 11;
+            this.textBoxBuyerTaxCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerTaxCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxBuyerLegalName
+            // 
+            this.textBoxBuyerLegalName.AllowDrop = true;
+            this.textBoxBuyerLegalName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerLegalName.Location = new System.Drawing.Point(194, 40);
+            this.textBoxBuyerLegalName.Name = "textBoxBuyerLegalName";
+            this.textBoxBuyerLegalName.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerLegalName.TabIndex = 10;
+            this.textBoxBuyerLegalName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerLegalName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
+            // 
+            // textBoxBuyerDisplayName
+            // 
+            this.textBoxBuyerDisplayName.AllowDrop = true;
+            this.textBoxBuyerDisplayName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBuyerDisplayName.Location = new System.Drawing.Point(194, 3);
+            this.textBoxBuyerDisplayName.Name = "textBoxBuyerDisplayName";
+            this.textBoxBuyerDisplayName.Size = new System.Drawing.Size(185, 20);
+            this.textBoxBuyerDisplayName.TabIndex = 9;
+            this.textBoxBuyerDisplayName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
+            this.textBoxBuyerDisplayName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
             // 
             // label30
             // 
@@ -915,6 +1354,20 @@
             this.label36.Text = "Payment method : ";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 3);
+            this.label4.Margin = new System.Windows.Forms.Padding(3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(382, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "BUYER";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 2;
@@ -991,447 +1444,6 @@
             this.labelNamespace.TabIndex = 3;
             this.labelNamespace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textTemplateCode
-            // 
-            this.textTemplateCode.AllowDrop = true;
-            this.textTemplateCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textTemplateCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textTemplateCode.Location = new System.Drawing.Point(201, 3);
-            this.textTemplateCode.Name = "textTemplateCode";
-            this.textTemplateCode.Size = new System.Drawing.Size(177, 20);
-            this.textTemplateCode.TabIndex = 8;
-            this.textTemplateCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textTemplateCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxNumSeries
-            // 
-            this.textBoxNumSeries.AllowDrop = true;
-            this.textBoxNumSeries.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNumSeries.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxNumSeries.Location = new System.Drawing.Point(201, 44);
-            this.textBoxNumSeries.Name = "textBoxNumSeries";
-            this.textBoxNumSeries.Size = new System.Drawing.Size(177, 20);
-            this.textBoxNumSeries.TabIndex = 9;
-            this.textBoxNumSeries.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxNumSeries.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxNumInv
-            // 
-            this.textBoxNumInv.AllowDrop = true;
-            this.textBoxNumInv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNumInv.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxNumInv.Location = new System.Drawing.Point(201, 85);
-            this.textBoxNumInv.Name = "textBoxNumInv";
-            this.textBoxNumInv.Size = new System.Drawing.Size(177, 20);
-            this.textBoxNumInv.TabIndex = 10;
-            this.textBoxNumInv.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxNumInv.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxDate
-            // 
-            this.textBoxDate.AllowDrop = true;
-            this.textBoxDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxDate.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxDate.Location = new System.Drawing.Point(201, 126);
-            this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(177, 20);
-            this.textBoxDate.TabIndex = 11;
-            this.textBoxDate.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxDate.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxTotalVATAmount
-            // 
-            this.textBoxTotalVATAmount.AllowDrop = true;
-            this.textBoxTotalVATAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTotalVATAmount.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxTotalVATAmount.Location = new System.Drawing.Point(201, 167);
-            this.textBoxTotalVATAmount.Name = "textBoxTotalVATAmount";
-            this.textBoxTotalVATAmount.Size = new System.Drawing.Size(177, 20);
-            this.textBoxTotalVATAmount.TabIndex = 12;
-            this.textBoxTotalVATAmount.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxTotalVATAmount.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxTotalAmountWithoutVAT
-            // 
-            this.textBoxTotalAmountWithoutVAT.AllowDrop = true;
-            this.textBoxTotalAmountWithoutVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTotalAmountWithoutVAT.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxTotalAmountWithoutVAT.Location = new System.Drawing.Point(201, 208);
-            this.textBoxTotalAmountWithoutVAT.Name = "textBoxTotalAmountWithoutVAT";
-            this.textBoxTotalAmountWithoutVAT.Size = new System.Drawing.Size(177, 20);
-            this.textBoxTotalAmountWithoutVAT.TabIndex = 13;
-            this.textBoxTotalAmountWithoutVAT.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxTotalAmountWithoutVAT.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxTotalAmountWithVAT
-            // 
-            this.textBoxTotalAmountWithVAT.AllowDrop = true;
-            this.textBoxTotalAmountWithVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTotalAmountWithVAT.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxTotalAmountWithVAT.Location = new System.Drawing.Point(201, 249);
-            this.textBoxTotalAmountWithVAT.Name = "textBoxTotalAmountWithVAT";
-            this.textBoxTotalAmountWithVAT.Size = new System.Drawing.Size(177, 20);
-            this.textBoxTotalAmountWithVAT.TabIndex = 14;
-            this.textBoxTotalAmountWithVAT.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxTotalAmountWithVAT.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxTotalAmountWithVATbyWords
-            // 
-            this.textBoxTotalAmountWithVATbyWords.AllowDrop = true;
-            this.textBoxTotalAmountWithVATbyWords.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTotalAmountWithVATbyWords.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxTotalAmountWithVATbyWords.Location = new System.Drawing.Point(201, 290);
-            this.textBoxTotalAmountWithVATbyWords.Name = "textBoxTotalAmountWithVATbyWords";
-            this.textBoxTotalAmountWithVATbyWords.Size = new System.Drawing.Size(177, 20);
-            this.textBoxTotalAmountWithVATbyWords.TabIndex = 15;
-            this.textBoxTotalAmountWithVATbyWords.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxTotalAmountWithVATbyWords.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxNumber
-            // 
-            this.textBoxNumber.AllowDrop = true;
-            this.textBoxNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNumber.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxNumber.Location = new System.Drawing.Point(201, 3);
-            this.textBoxNumber.Name = "textBoxNumber";
-            this.textBoxNumber.Size = new System.Drawing.Size(178, 20);
-            this.textBoxNumber.TabIndex = 10;
-            this.textBoxNumber.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxNumber.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxItemName
-            // 
-            this.textBoxItemName.AllowDrop = true;
-            this.textBoxItemName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxItemName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxItemName.Location = new System.Drawing.Point(201, 36);
-            this.textBoxItemName.Name = "textBoxItemName";
-            this.textBoxItemName.Size = new System.Drawing.Size(178, 20);
-            this.textBoxItemName.TabIndex = 11;
-            this.textBoxItemName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxItemName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxUnitName
-            // 
-            this.textBoxUnitName.AllowDrop = true;
-            this.textBoxUnitName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxUnitName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxUnitName.Location = new System.Drawing.Point(201, 69);
-            this.textBoxUnitName.Name = "textBoxUnitName";
-            this.textBoxUnitName.Size = new System.Drawing.Size(178, 20);
-            this.textBoxUnitName.TabIndex = 12;
-            this.textBoxUnitName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxUnitName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxQuantity
-            // 
-            this.textBoxQuantity.AllowDrop = true;
-            this.textBoxQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxQuantity.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxQuantity.Location = new System.Drawing.Point(201, 102);
-            this.textBoxQuantity.Name = "textBoxQuantity";
-            this.textBoxQuantity.Size = new System.Drawing.Size(178, 20);
-            this.textBoxQuantity.TabIndex = 13;
-            this.textBoxQuantity.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxQuantity.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxUnitPrice
-            // 
-            this.textBoxUnitPrice.AllowDrop = true;
-            this.textBoxUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxUnitPrice.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxUnitPrice.Location = new System.Drawing.Point(201, 135);
-            this.textBoxUnitPrice.Name = "textBoxUnitPrice";
-            this.textBoxUnitPrice.Size = new System.Drawing.Size(178, 20);
-            this.textBoxUnitPrice.TabIndex = 14;
-            this.textBoxUnitPrice.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxUnitPrice.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBox14ItemTotalVATAmount
-            // 
-            this.textBox14ItemTotalVATAmount.AllowDrop = true;
-            this.textBox14ItemTotalVATAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14ItemTotalVATAmount.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox14ItemTotalVATAmount.Location = new System.Drawing.Point(201, 168);
-            this.textBox14ItemTotalVATAmount.Name = "textBox14ItemTotalVATAmount";
-            this.textBox14ItemTotalVATAmount.Size = new System.Drawing.Size(178, 20);
-            this.textBox14ItemTotalVATAmount.TabIndex = 15;
-            this.textBox14ItemTotalVATAmount.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBox14ItemTotalVATAmount.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxItemTotalAmountWithoutVAT
-            // 
-            this.textBoxItemTotalAmountWithoutVAT.AllowDrop = true;
-            this.textBoxItemTotalAmountWithoutVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxItemTotalAmountWithoutVAT.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxItemTotalAmountWithoutVAT.Location = new System.Drawing.Point(201, 201);
-            this.textBoxItemTotalAmountWithoutVAT.Name = "textBoxItemTotalAmountWithoutVAT";
-            this.textBoxItemTotalAmountWithoutVAT.Size = new System.Drawing.Size(178, 20);
-            this.textBoxItemTotalAmountWithoutVAT.TabIndex = 16;
-            this.textBoxItemTotalAmountWithoutVAT.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxItemTotalAmountWithoutVAT.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxItemVATPercentage
-            // 
-            this.textBoxItemVATPercentage.AllowDrop = true;
-            this.textBoxItemVATPercentage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxItemVATPercentage.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxItemVATPercentage.Location = new System.Drawing.Point(201, 234);
-            this.textBoxItemVATPercentage.Name = "textBoxItemVATPercentage";
-            this.textBoxItemVATPercentage.Size = new System.Drawing.Size(178, 20);
-            this.textBoxItemVATPercentage.TabIndex = 17;
-            this.textBoxItemVATPercentage.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxItemVATPercentage.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxItemPromotion
-            // 
-            this.textBoxItemPromotion.AllowDrop = true;
-            this.textBoxItemPromotion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxItemPromotion.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxItemPromotion.Location = new System.Drawing.Point(201, 267);
-            this.textBoxItemPromotion.Name = "textBoxItemPromotion";
-            this.textBoxItemPromotion.Size = new System.Drawing.Size(178, 20);
-            this.textBoxItemPromotion.TabIndex = 18;
-            this.textBoxItemPromotion.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxItemPromotion.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxItemItems
-            // 
-            this.textBoxItemItems.AllowDrop = true;
-            this.textBoxItemItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxItemItems.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxItemItems.Location = new System.Drawing.Point(201, 300);
-            this.textBoxItemItems.Name = "textBoxItemItems";
-            this.textBoxItemItems.Size = new System.Drawing.Size(178, 20);
-            this.textBoxItemItems.TabIndex = 19;
-            this.textBoxItemItems.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxItemItems.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerName
-            // 
-            this.textBoxSellerName.AllowDrop = true;
-            this.textBoxSellerName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerName.Location = new System.Drawing.Point(193, 3);
-            this.textBoxSellerName.Name = "textBoxSellerName";
-            this.textBoxSellerName.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerName.TabIndex = 9;
-            this.textBoxSellerName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerTaxCode
-            // 
-            this.textBoxSellerTaxCode.AllowDrop = true;
-            this.textBoxSellerTaxCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerTaxCode.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerTaxCode.Location = new System.Drawing.Point(193, 40);
-            this.textBoxSellerTaxCode.Name = "textBoxSellerTaxCode";
-            this.textBoxSellerTaxCode.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerTaxCode.TabIndex = 10;
-            this.textBoxSellerTaxCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerTaxCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerAddress
-            // 
-            this.textBoxSellerAddress.AllowDrop = true;
-            this.textBoxSellerAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerAddress.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerAddress.Location = new System.Drawing.Point(193, 77);
-            this.textBoxSellerAddress.Name = "textBoxSellerAddress";
-            this.textBoxSellerAddress.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerAddress.TabIndex = 11;
-            this.textBoxSellerAddress.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerAddress.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerPhone
-            // 
-            this.textBoxSellerPhone.AllowDrop = true;
-            this.textBoxSellerPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerPhone.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerPhone.Location = new System.Drawing.Point(193, 114);
-            this.textBoxSellerPhone.Name = "textBoxSellerPhone";
-            this.textBoxSellerPhone.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerPhone.TabIndex = 12;
-            this.textBoxSellerPhone.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerPhone.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerFax
-            // 
-            this.textBoxSellerFax.AllowDrop = true;
-            this.textBoxSellerFax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerFax.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerFax.Location = new System.Drawing.Point(193, 151);
-            this.textBoxSellerFax.Name = "textBoxSellerFax";
-            this.textBoxSellerFax.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerFax.TabIndex = 13;
-            this.textBoxSellerFax.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerFax.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerBankAccount
-            // 
-            this.textBoxSellerBankAccount.AllowDrop = true;
-            this.textBoxSellerBankAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerBankAccount.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerBankAccount.Location = new System.Drawing.Point(193, 188);
-            this.textBoxSellerBankAccount.Name = "textBoxSellerBankAccount";
-            this.textBoxSellerBankAccount.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerBankAccount.TabIndex = 14;
-            this.textBoxSellerBankAccount.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerBankAccount.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxSellerBankName
-            // 
-            this.textBoxSellerBankName.AllowDrop = true;
-            this.textBoxSellerBankName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSellerBankName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSellerBankName.Location = new System.Drawing.Point(193, 225);
-            this.textBoxSellerBankName.Name = "textBoxSellerBankName";
-            this.textBoxSellerBankName.Size = new System.Drawing.Size(185, 20);
-            this.textBoxSellerBankName.TabIndex = 15;
-            this.textBoxSellerBankName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxSellerBankName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerDisplayName
-            // 
-            this.textBoxBuyerDisplayName.AllowDrop = true;
-            this.textBoxBuyerDisplayName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerDisplayName.Location = new System.Drawing.Point(194, 3);
-            this.textBoxBuyerDisplayName.Name = "textBoxBuyerDisplayName";
-            this.textBoxBuyerDisplayName.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerDisplayName.TabIndex = 9;
-            this.textBoxBuyerDisplayName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerDisplayName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerLegalName
-            // 
-            this.textBoxBuyerLegalName.AllowDrop = true;
-            this.textBoxBuyerLegalName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerLegalName.Location = new System.Drawing.Point(194, 40);
-            this.textBoxBuyerLegalName.Name = "textBoxBuyerLegalName";
-            this.textBoxBuyerLegalName.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerLegalName.TabIndex = 10;
-            this.textBoxBuyerLegalName.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerLegalName.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerTaxCode
-            // 
-            this.textBoxBuyerTaxCode.AllowDrop = true;
-            this.textBoxBuyerTaxCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerTaxCode.Location = new System.Drawing.Point(194, 77);
-            this.textBoxBuyerTaxCode.Name = "textBoxBuyerTaxCode";
-            this.textBoxBuyerTaxCode.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerTaxCode.TabIndex = 11;
-            this.textBoxBuyerTaxCode.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerTaxCode.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerAddress
-            // 
-            this.textBoxBuyerAddress.AllowDrop = true;
-            this.textBoxBuyerAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerAddress.Location = new System.Drawing.Point(194, 114);
-            this.textBoxBuyerAddress.Name = "textBoxBuyerAddress";
-            this.textBoxBuyerAddress.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerAddress.TabIndex = 12;
-            this.textBoxBuyerAddress.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerAddress.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerPhone
-            // 
-            this.textBoxBuyerPhone.AllowDrop = true;
-            this.textBoxBuyerPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerPhone.Location = new System.Drawing.Point(194, 151);
-            this.textBoxBuyerPhone.Name = "textBoxBuyerPhone";
-            this.textBoxBuyerPhone.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerPhone.TabIndex = 13;
-            this.textBoxBuyerPhone.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerPhone.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerFax
-            // 
-            this.textBoxBuyerFax.AllowDrop = true;
-            this.textBoxBuyerFax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerFax.Location = new System.Drawing.Point(194, 188);
-            this.textBoxBuyerFax.Name = "textBoxBuyerFax";
-            this.textBoxBuyerFax.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerFax.TabIndex = 14;
-            this.textBoxBuyerFax.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerFax.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
-            // textBoxBuyerPaymentMethod
-            // 
-            this.textBoxBuyerPaymentMethod.AllowDrop = true;
-            this.textBoxBuyerPaymentMethod.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBuyerPaymentMethod.Location = new System.Drawing.Point(194, 225);
-            this.textBoxBuyerPaymentMethod.Name = "textBoxBuyerPaymentMethod";
-            this.textBoxBuyerPaymentMethod.Size = new System.Drawing.Size(185, 20);
-            this.textBoxBuyerPaymentMethod.TabIndex = 15;
-            this.textBoxBuyerPaymentMethod.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_DragDrop);
-            this.textBoxBuyerPaymentMethod.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_DragEnter);
-            // 
             // treeView1
             // 
             this.treeView1.AllowDrop = true;
@@ -1440,18 +1452,6 @@
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(258, 757);
             this.treeView1.TabIndex = 1;
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonUpdate.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(196, 20);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(110, 29);
-            this.buttonUpdate.TabIndex = 1;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.button2_Click);
             // 
             // DefineStructNametag
             // 
@@ -1511,7 +1511,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textTemplateCode;
+        private System.Windows.Forms.TextBox textBoxTemplateCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
@@ -1519,7 +1519,7 @@
         private System.Windows.Forms.TextBox textBoxItemPromotion;
         private System.Windows.Forms.TextBox textBoxItemVATPercentage;
         private System.Windows.Forms.TextBox textBoxItemTotalAmountWithoutVAT;
-        private System.Windows.Forms.TextBox textBox14ItemTotalVATAmount;
+        private System.Windows.Forms.TextBox textBoxItemTotalVATAmount;
         private System.Windows.Forms.TextBox textBoxUnitPrice;
         private System.Windows.Forms.TextBox textBoxQuantity;
         private System.Windows.Forms.TextBox textBoxUnitName;

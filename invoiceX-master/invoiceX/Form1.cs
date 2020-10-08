@@ -35,6 +35,11 @@ namespace invoiceX
       
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (this.path == null)
+            {
+                cậpNhậtNamespaceToolStripMenuItem.Visible = false;
+            }
+
             if ((invoiceX.Program.FileName1 != null))
             {
                 if (!checkExtensionsPath(invoiceX.Program.FileName1))
@@ -46,6 +51,7 @@ namespace invoiceX
                 {
                    this.path = invoiceX.Program.FileName1;  
                    this.ShowInvoice(invoiceX.Program.FileName1);
+                    cậpNhậtNamespaceToolStripMenuItem.Visible = true;
                 }
             }
         }
@@ -62,6 +68,7 @@ namespace invoiceX
                 {
                     this.path = file;
                     ShowInvoice(file);
+                    cậpNhậtNamespaceToolStripMenuItem.Visible = true;
                 }
                 else
                     MessageBox.Show("không phải file XML");
@@ -86,7 +93,9 @@ namespace invoiceX
                 string path = dlg.FileName;
                 this.path = path;
                 ShowInvoice(path);
+                cậpNhậtNamespaceToolStripMenuItem.Visible = true;
             }
+
         }
         private void ShowInvoice(string path)
         {
@@ -173,9 +182,11 @@ namespace invoiceX
 
         private void cậpNhậtNamespaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
             DefineStructNametag define = new DefineStructNametag(this.path);
             define.ShowDialog();
+            this.Controls.Clear();
+            this.InitializeComponent();
+            ShowInvoice(path);
         }
     }
 }
