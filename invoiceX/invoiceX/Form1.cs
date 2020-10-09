@@ -17,10 +17,12 @@ namespace invoiceX
 {
     public partial class ReadXML : Form
     {
-
-        private Invoice invoice; 
+       
+        private Invoice invoice;
+        private string path;
         public ReadXML()
         {
+                      
             InitializeComponent();
             this.AllowDrop = true;
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
@@ -30,18 +32,28 @@ namespace invoiceX
         {
 
         }
+      
         private void Form1_Load(object sender, EventArgs e)
         {
-                if ((invoiceX.Program.FileName1 != null))
-                {
+            if (this.path == null)
+            {
+                cậpNhậtNamespaceToolStripMenuItem.Visible = false;
+            }
+
+            if ((invoiceX.Program.FileName1 != null))
+            {
                 if (!checkExtensionsPath(invoiceX.Program.FileName1))
-                { 
+                {
                     MessageBox.Show("Không phải file XML");
                     Close();
                 }
                 else
-                    ShowInvoice(invoiceX.Program.FileName1);   
+                {
+                   this.path = invoiceX.Program.FileName1;  
+                   this.ShowInvoice(invoiceX.Program.FileName1);
+                    cậpNhậtNamespaceToolStripMenuItem.Visible = true;
                 }
+            }
         }
         
         void Form1_DragEnter(object sender, DragEventArgs e)
@@ -53,7 +65,11 @@ namespace invoiceX
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             foreach (string file in files)
                 if (checkExtensionsPath(file))
+                {
+                    this.path = file;
                     ShowInvoice(file);
+                    cậpNhậtNamespaceToolStripMenuItem.Visible = true;
+                }
                 else
                     MessageBox.Show("không phải file XML");
         }
@@ -75,16 +91,23 @@ namespace invoiceX
             if(dlg.ShowDialog() == DialogResult.OK)
             {
                 string path = dlg.FileName;
-                ShowInvoice(path);
+                this.path = path;
+                if (!checkExtensionsPath(path))
+                {
+                    MessageBox.Show("Không phải file XML");
+                    Close();
+                }
+                else
+                {
+                    ShowInvoice(path);
+                    cậpNhậtNamespaceToolStripMenuItem.Visible = true;
+                }
             }
         }
         private void ShowInvoice(string path)
         {
-            XmlNamespaceManager namespaceManager = new XmlNamespaceManager(new NameTable());
-            namespaceManager.AddNamespace("inv", "http://laphoadon.gdt.gov.vn/2014/09/invoicexml/v1");
-            namespaceManager.AddNamespace("aw", "http://www.w3.org/2000/09/xmldsig#");
             this.invoice = new Invoice();
-            this.invoice.getInfoFromPath(path, namespaceManager);
+            this.invoice.getInfoFromPath(path);
 
             //Add info buyer to display windows 
             buyerName.Text = this.invoice.Buyer.Name;
@@ -117,10 +140,6 @@ namespace invoiceX
 
             //Add item to display windows 
             int i = 0;
-            if (this.invoice.ListItem.checkColumnDiscount())
-            {
-
-            }
             listItems.Items.Clear();
             listItems.Columns[4].TextAlign = HorizontalAlignment.Right;
             listItems.Columns[5].TextAlign = HorizontalAlignment.Right;
@@ -128,8 +147,6 @@ namespace invoiceX
             listItems.Columns[7].TextAlign = HorizontalAlignment.Right;
             listItems.Columns[8].TextAlign = HorizontalAlignment.Right;
             listItems.Columns[9].TextAlign = HorizontalAlignment.Right;
-            //listItems.HeaderStyle = (ColumnHeaderStyle)ColumnHeaderAutoResizeStyle.ColumnContent;
-
             foreach (Item item in this.invoice.ListItem.Item)
             {
 
@@ -146,8 +163,6 @@ namespace invoiceX
                 listItems.Items[i].SubItems.Add(item.VATPercentage.ToString("#,##0"));
                 listItems.Items[i].SubItems.Add(item.VATAmount.ToString("#,##0"));
                 listItems.Items[i].SubItems.Add((item.VATAmount + item.ItemToTalAmountWithoutVAT).ToString("#,##0"));
-                //check xem flied promotion va discount co chua neu chua chu thi set with = 0 gian with cac cot con lai 
-
                 i++;
             }
         }
@@ -162,6 +177,15 @@ namespace invoiceX
             if (extensions.CompareTo("xml") == 0)
                 flag = true;
             return flag;
+        }
+
+        private void cậpNhậtNamespaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DefineStructNametag define = new DefineStructNametag(this.path);
+            define.ShowDialog();
+            this.Controls.Clear();
+            this.InitializeComponent();
+            ShowInvoice(path);
         }
     }
 }

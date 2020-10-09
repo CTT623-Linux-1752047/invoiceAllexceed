@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.MenuStrip menuStrip1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReadXML));
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đọcFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xuấtFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cậpNhậtNamespaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -106,6 +107,7 @@
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.label26 = new System.Windows.Forms.Label();
             this.totalAmountWithVATByWords = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -122,6 +124,7 @@
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -140,7 +143,7 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đọcFileToolStripMenuItem,
-            this.xuấtFileToolStripMenuItem,
+            this.cậpNhậtNamespaceToolStripMenuItem,
             this.thoátToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
@@ -150,23 +153,25 @@
             // 
             this.đọcFileToolStripMenuItem.Name = "đọcFileToolStripMenuItem";
             this.đọcFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đọcFileToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.đọcFileToolStripMenuItem.Text = "Đọc file ";
             this.đọcFileToolStripMenuItem.Click += new System.EventHandler(this.đọcFileToolStripMenuItem_Click);
-            // 
-            // xuấtFileToolStripMenuItem
-            // 
-            this.xuấtFileToolStripMenuItem.Name = "xuấtFileToolStripMenuItem";
-            this.xuấtFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.xuấtFileToolStripMenuItem.Text = "Xuất file ";
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
+            // 
+            // cậpNhậtNamespaceToolStripMenuItem
+            // 
+            this.cậpNhậtNamespaceToolStripMenuItem.Name = "cậpNhậtNamespaceToolStripMenuItem";
+            this.cậpNhậtNamespaceToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
+            this.cậpNhậtNamespaceToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.cậpNhậtNamespaceToolStripMenuItem.Text = "Cập nhật namespace";
+            this.cậpNhậtNamespaceToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtNamespaceToolStripMenuItem_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -197,6 +202,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel7, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -1174,6 +1180,17 @@
             this.totalAmountWithVATByWords.Size = new System.Drawing.Size(746, 19);
             this.totalAmountWithVATByWords.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(346, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // ReadXML
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1181,10 +1198,12 @@
             this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1600, 1000);
             this.MinimumSize = new System.Drawing.Size(1066, 1000);
             this.Name = "ReadXML";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReadXML";
             this.Load += new System.EventHandler(this.Form1_Load);
             menuStrip1.ResumeLayout(false);
@@ -1214,6 +1233,7 @@
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1251,7 +1271,6 @@
         private System.Windows.Forms.Label buyerAccount;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đọcFileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xuấtFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.Label sellerAccount;
@@ -1298,6 +1317,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripMenuItem cậpNhậtNamespaceToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

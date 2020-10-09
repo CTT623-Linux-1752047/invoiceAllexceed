@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using System.Xml.XPath;
 using System.Xml;
 using System.Xml.Linq;
+using System.Windows.Forms;
+using System.Data.SQLite;
+using System.Linq.Expressions;
 
 namespace invoiceX
 {
@@ -19,7 +22,6 @@ namespace invoiceX
             this.buyerTaxCode = null;
             this.buyerAddress = null;
             this.buyerPaymentMethod = null;
-
         }
         public Buyer(string name, string company, string taxCode, string address, string paymentMethod, string buyerAccount)
         {
@@ -68,41 +70,35 @@ namespace invoiceX
         {
             get { return this.buyerAccount; }
         }
-        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager)
+        public XElement XPathElement(XElement root, string read, XmlNamespaceManager namespaceManager)
+        {
+            XElement node = null;
+            try
+            {
+                node = root.XPathSelectElement(".//" + read, namespaceManager);
+            }
+            catch (Exception ex)
+            {
+                node = null;
+            }
+            return node;
+        }
+        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager, int typeInvoice)
         {
             XElement xelement = XElement.Load(path);
-
-            XElement buyerDisplayName = xelement.XPathSelectElement("./inv:invoiceData/inv:buyerDisplayName", namespaceManager);
-            XElement buyerLegalName = xelement.XPathSelectElement("./inv:invoiceData/inv:buyerLegalName", namespaceManager);
-            XElement buyerTaxCode = xelement.XPathSelectElement("./inv:invoiceData/inv:buyerTaxCode", namespaceManager);
-            XElement buyerAddressLine = xelement.XPathSelectElement("./inv:invoiceData/inv:buyerAddressLine", namespaceManager);
-            XElement buyerPaymentMethod = xelement.XPathSelectElement("./inv:invoiceData/inv:payments/inv:payment/inv:paymentMethodName", namespaceManager);
-            XElement buyerAccount = xelement.XPathSelectElement("./inv:invoiceData/inv:payments/inv:payment/inv:buyerBankAccount", namespaceManager);
-
-            if ((buyerDisplayName == null) || (buyerDisplayName.Value == ""))
-                this.buyerName = buyerLegalName.Value;
-            else
-                this.buyerName = buyerDisplayName.Value;
-            if (buyerLegalName == null)
-                this.buyerCompany = "";
-            else
-                this.buyerCompany = buyerLegalName.Value;
-            if (buyerTaxCode == null)
-                this.buyerTaxCode = "";
-            else
-                this.buyerTaxCode = buyerTaxCode.Value;
-            if (buyerAddressLine == null)
-                this.buyerAddress = "";
-            else
-                this.buyerAddress = buyerAddressLine.Value;
-            if (buyerPaymentMethod == null)
-                this.buyerPaymentMethod = "";
-            else
-                this.buyerPaymentMethod = buyerPaymentMethod.Value;
-            if (buyerAccount == null)
-                this.buyerAccount = "";
-            else
-                this.buyerAccount = buyerAccount.Value;
+            //tao ket noi voi db 
+            DataAccess data = new DataAccess();
+            XElement buyerDisplayName = XPathElement(xelement, data.ReadData("Buyer", "DisplayName", typeInvoice), namespaceManager);
+            XElement buyerLegalName = XPathElement(xelement, data.ReadData("Buyer", "LegalName", typeInvoice), namespaceManager);
+            XElement buyerTaxCode = XPathElement(xelement, data.ReadData("Buyer", "Taxcode", typeInvoice), namespaceManager);
+            XElement buyerAddressLine = XPathElement(xelement, data.ReadData("Buyer", "Address", typeInvoice), namespaceManager);
+            XElement buyerPaymentMethod = XPathElement(xelement, data.ReadData("Buyer", "PaymentMethod", typeInvoice), namespaceManager);
+            data.Close();
+            this.buyerCompany = buyerLegalName == null ? "" : buyerLegalName.Value;
+            this.buyerName = buyerDisplayName == null ? this.buyerCompany : buyerDisplayName.Value;
+            this.buyerTaxCode = buyerTaxCode == null ? "" : buyerTaxCode.Value;
+            this.buyerAddress = buyerAddressLine == null ? "" : buyerAddressLine.Value;
+            this.buyerPaymentMethod = buyerPaymentMethod == null ? "" : buyerPaymentMethod.Value;
         }
     }
 }

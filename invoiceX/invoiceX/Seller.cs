@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using System.Data.SQLite;
+using System.Windows.Forms;
 
 namespace invoiceX
 {
@@ -68,36 +70,37 @@ namespace invoiceX
         {
             get { return this.bankName; }
         }
-        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager)
+        public XElement XPathElement(XElement root, string read, XmlNamespaceManager namespaceManager)
         {
+            XElement node = null;
+            try
+            {
+                node = root.XPathSelectElement(".//" + read, namespaceManager);
+            }
+            catch (Exception ex)
+            {
+                node = null;
+            }
+            return node;
+        }
+        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager, int typeInvoice)
+        {
+            DataAccess data = new DataAccess();
             XElement xelement = XElement.Load(path);
-
             // get node theo duong dan xpath
-            XElement sellerLegalName = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerLegalName", namespaceManager);
-            XElement sellerTaxCode = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerTaxCode", namespaceManager);
-            XElement sellerAddressLine = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerAddressLine", namespaceManager);
-            XElement sellerPhoneNumber = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerPhoneNumber", namespaceManager);
-            XElement sellerFaxNumber = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerFaxNumber", namespaceManager);
-            XElement sellerBankAccount = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerBankAccount", namespaceManager);
-            XElement sellerBankName = xelement.XPathSelectElement("./inv:invoiceData/inv:sellerBankName", namespaceManager);
-
+            XElement sellerLegalName = XPathElement(xelement, data.ReadData("Seller", "Name", typeInvoice), namespaceManager);
+            XElement sellerTaxCode = XPathElement(xelement, data.ReadData("Seller", "Taxcode", typeInvoice), namespaceManager);
+            XElement sellerAddressLine = XPathElement(xelement, data.ReadData("Seller", "Address", typeInvoice), namespaceManager);
+            XElement sellerPhoneNumber = XPathElement(xelement, data.ReadData("Seller", "Phone", typeInvoice), namespaceManager);
+            XElement sellerFaxNumber = XPathElement(xelement, data.ReadData("Seller", "Fax", typeInvoice), namespaceManager);
+            XElement sellerBankAccount = XPathElement(xelement, data.ReadData("Seller", "BanKAccount", typeInvoice), namespaceManager);
+            XElement sellerBankName = XPathElement(xelement, data.ReadData("Seller", "BankName", typeInvoice), namespaceManager);
+            data.Close();
             //lay value node vua get duoc them vao trong object seller 
             //Kiem tra element node co null kho neu co gan gia tri rong cho flied do
-            if (sellerLegalName == null)
-                this.sellerName = "";
-            else
-                this.sellerName = sellerLegalName.Value;
-            if (sellerTaxCode == null)
-                this.sellerTaxCode = "";
-            else
-                this.sellerTaxCode = sellerTaxCode.Value;
-            if (sellerAddressLine == null)
-                this.sellerAddress = "";
-            else
-                this.sellerAddress = sellerAddressLine.Value;
-
-
-
+            this.sellerName = sellerLegalName == null ? "" : sellerLegalName.Value;
+            this.sellerTaxCode = sellerTaxCode == null ? "" : sellerTaxCode.Value;
+            this.sellerAddress = sellerAddressLine == null ? "" : sellerAddressLine.Value;
             if (sellerPhoneNumber == null)
                 this.sellerTel = "";
             else
@@ -112,32 +115,12 @@ namespace invoiceX
                     this.SellerFaxNumber = cutStringPhoneFax[1];
                     this.SellerTel = cutStringPhoneFax[0];
                 }
-                else 
-                    this.sellerTel = sellerPhoneNumber.Value; 
-                
+                else
+                    this.sellerTel = sellerPhoneNumber.Value;
             }
-
-
-
-            if ((sellerFaxNumber != null))
-                this.sellerFaxNumber = sellerFaxNumber.Value;
-
-
-
-
-            if (sellerBankAccount == null)
-                this.sellerAccountNo = null;
-            else
-                this.sellerAccountNo = sellerBankAccount.Value;
-            
-           
-
-           
-            if (sellerBankName == null)
-                this.bankName = "";
-            else
-                this.bankName = sellerBankName.Value;
-
+            this.sellerFaxNumber = sellerFaxNumber != null ? sellerFaxNumber.Value : this.SellerTel;
+            this.sellerAccountNo = sellerBankAccount == null ? "" : sellerBankAccount.Value;
+            this.bankName = sellerBankName == null ? "" : sellerBankName.Value;
         }
     }
 }

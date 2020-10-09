@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SQLite;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
@@ -11,90 +10,69 @@ namespace invoiceX
 {
     class ListItem
     {
-        List<Item> items;
-
+        List<Item> item;
         public ListItem()
         {
-            this.items = new List<Item>();
+            this.item = new List<Item>();
         }
         public List<Item> Item
         {
-            get { return this.items; }
+            get { return this.item; }
         }
         public bool checkColumnDiscount()
         {
             bool flag = false; 
-            foreach(Item item in this.items)
+            foreach(Item item in this.item)
             {
                 if (item.ItemDscnAmnt == 0)
                     flag = true;
             }
             return flag;
         }
-        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManager)
+        public XElement XPathElement(XElement root, string read, XmlNamespaceManager namespaceManager)
+        {
+            XElement node = null;
+            try
+            {
+                node = root.XPathSelectElement(".//" + read, namespaceManager);
+            }
+            catch(Exception ex)
+            {
+                node = null; 
+            }
+            return node;
+        }
+        public void getInfoFromPath(string path, XmlNamespaceManager namespaceManagers, int typeInvoice)
         {
             XElement xelement = XElement.Load(path);
-            XElement rootItem = xelement.XPathSelectElement("./inv:invoiceData/inv:items", namespaceManager);
+            DataAccess data = new DataAccess();
+            XElement rootItem = XPathElement(xelement, data.ReadData("Item", "Items", typeInvoice), namespaceManagers);
             IEnumerable<XElement> listItems = rootItem.Elements();
             foreach (XElement item in listItems)
             {
                 Item temp = new Item();
-                XElement stt = item.XPathSelectElement("./inv:lineNumber", namespaceManager);
-                XElement itemName = item.XPathSelectElement("./inv:itemName", namespaceManager);
-                XElement unitName = item.XPathSelectElement("./inv:unitName", namespaceManager);
-                XElement quantity = item.XPathSelectElement("./inv:quantity", namespaceManager);
-                XElement itemTotalAmountWithoutVAT = item.XPathSelectElement("./inv:itemTotalAmountWithoutVat", namespaceManager);
-                XElement vatAmount = item.XPathSelectElement("./inv:vatAmount", namespaceManager);
-                XElement vatPercentage = item.XPathSelectElement("./inv:vatPercentage", namespaceManager);
-                XElement discountAmount = item.XPathSelectElement("./inv:ItemDscnAmount", namespaceManager);
-                XElement unitPrice = item.XPathSelectElement("./inv:unitPrice", namespaceManager);
+                XElement stt = XPathElement(item, data.ReadData("Item", "STT", typeInvoice), namespaceManagers);
+                XElement itemName = XPathElement(item, data.ReadData("Item", "NameItem", typeInvoice), namespaceManagers);
+                XElement unitName = XPathElement(item, data.ReadData("Item", "NameUnite", typeInvoice), namespaceManagers);
+                XElement quantity = XPathElement(item, data.ReadData("Item", "Quantity", typeInvoice), namespaceManagers);
+                XElement itemTotalAmountWithoutVAT = XPathElement(item, data.ReadData("Item", "ItemTotalAmountWithoutVAT", typeInvoice), namespaceManagers);
+                XElement vatAmount = XPathElement(item, data.ReadData("Item", "VATAmount", typeInvoice), namespaceManagers);
+                XElement vatPercentage = XPathElement(item, data.ReadData("Item", "VATPercentage", typeInvoice), namespaceManagers);
+                XElement discountAmount = XPathElement(item, data.ReadData("Item", "Promotion", typeInvoice), namespaceManagers);
+                XElement unitPrice = XPathElement(item, data.ReadData("Item", "PriceUnite", typeInvoice), namespaceManagers);
 
-                if (stt == null)
-                    temp.LineNumber = 0;
-                else
-                    temp.LineNumber = int.Parse(stt.Value);
-
-                if (itemName == null)
-                    temp.ItemName = "";
-                else
-                    temp.ItemName = itemName.Value;
-
-                if (unitName == null)
-                    temp.UnitName = "";
-                else
-                    temp.UnitName = unitName.Value;
-
-                if (quantity == null)
-                    temp.Quanity = 0;
-                else
-                    temp.Quanity = float.Parse(quantity.Value);
-
-                if (itemTotalAmountWithoutVAT == null)
-                    temp.ItemToTalAmountWithoutVAT = 0;
-                else
-                    temp.ItemToTalAmountWithoutVAT = float.Parse(itemTotalAmountWithoutVAT.Value);
-
-                if (vatAmount == null)
-                    temp.VATAmount = 0;
-                else
-                    temp.VATAmount = float.Parse(vatAmount.Value);
-
-                if (vatPercentage == null)
-                    temp.VATPercentage = 0;
-                else
-                    temp.VATPercentage = float.Parse(vatPercentage.Value);
-
-                if (discountAmount == null)
-                    temp.ItemDscnAmnt = 0;
-                else
-                    temp.ItemDscnAmnt = float.Parse(discountAmount.Value);
-
-                if (unitPrice == null)
-                    temp.UnitPrice = 0;
-                else
-                    temp.UnitPrice = float.Parse(unitPrice.Value);
-                this.items.Add(temp);
+                temp.LineNumber = stt == null ? -1 : int.Parse(stt.Value);
+                temp.ItemName = itemName == null ? "" : itemName.Value;
+                temp.UnitName = unitName == null ? "" : unitName.Value;
+                temp.Quanity = quantity == null ? 0 : float.Parse(quantity.Value);
+                temp.ItemToTalAmountWithoutVAT = itemTotalAmountWithoutVAT == null ? 0 : float.Parse(itemTotalAmountWithoutVAT.Value);
+                temp.VATAmount = vatAmount == null ? 0 : float.Parse(vatAmount.Value);
+                temp.VATPercentage = vatPercentage == null ? 0 : float.Parse(vatPercentage.Value);
+                temp.ItemDscnAmnt = discountAmount == null ? 0 : float.Parse(discountAmount.Value);
+                temp.UnitPrice = unitPrice == null ? 0 : float.Parse(unitPrice.Value);
+                this.item.Add(temp);
             }
+            data.Close();
         }
     }
     class Item
@@ -102,10 +80,17 @@ namespace invoiceX
         private long lineNumber;
         private float quanity, itemTotalAmountWithoutVAT, unitPrice, vatPercentage, vatAmount, itemDscnAmnt;
         private string itemName, unitName;
-
         public Item()
         {
-
+            this.lineNumber = 0;
+            this.quanity = 0;
+            this.itemTotalAmountWithoutVAT = 0;
+            this.unitPrice = 0;
+            this.vatPercentage = 0;
+            this.vatAmount = 0;
+            this.itemDscnAmnt = 0;
+            this.itemName = "";
+            this.unitName = "";
         }
         public Item(long stt, float quanity, float itemTotalAmountWithoutVAT,
                     float unitPrice, float vatPercentage, float vatAmount,
